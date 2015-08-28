@@ -15,6 +15,11 @@
 		90EA2BE71B9072C6002C57E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90EA2BE51B9072C6002C57E0 /* LaunchScreen.xib */; };
 		90EA2BF31B9072C7002C57E0 /* DDCategoryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BF21B9072C7002C57E0 /* DDCategoryDemoTests.m */; };
 		90EA2BFF1B907357002C57E0 /* UIDevice+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BFE1B907357002C57E0 /* UIDevice+DDTools.m */; };
+		90EA2C021B9079C7002C57E0 /* UIView+DDFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C011B9079C7002C57E0 /* UIView+DDFrame.m */; };
+		90EA2C051B9079EF002C57E0 /* UIView+DDTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C041B9079EF002C57E0 /* UIView+DDTouch.m */; };
+		90EA2C081B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C071B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m */; };
+		90EA2C0B1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C0A1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m */; };
+		90EA2C0E1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C0D1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m */; };
 		91CC04E05215518C7DF36DFC /* libPods-DDCategoryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A80D9B61B50A08DD34D155 /* libPods-DDCategoryDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +50,17 @@
 		90EA2BF21B9072C7002C57E0 /* DDCategoryDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCategoryDemoTests.m; sourceTree = "<group>"; };
 		90EA2BFD1B907357002C57E0 /* UIDevice+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DDTools.h"; sourceTree = "<group>"; };
 		90EA2BFE1B907357002C57E0 /* UIDevice+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DDTools.m"; sourceTree = "<group>"; };
+		90EA2C001B9079C7002C57E0 /* UIView+DDFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDFrame.h"; sourceTree = "<group>"; };
+		90EA2C011B9079C7002C57E0 /* UIView+DDFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDFrame.m"; sourceTree = "<group>"; };
+		90EA2C031B9079EF002C57E0 /* UIView+DDTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDTouch.h"; sourceTree = "<group>"; };
+		90EA2C041B9079EF002C57E0 /* UIView+DDTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDTouch.m"; sourceTree = "<group>"; };
+		90EA2C061B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
+		90EA2C071B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
+		90EA2C091B907A52002C57E0 /* UILabel+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
+		90EA2C0A1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
+		90EA2C0C1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
+		90EA2C0D1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
+		90EA2C0F1B907AA4002C57E0 /* CoreCategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreCategoryHeader.h; sourceTree = "<group>"; };
 		95B6D7C289542BD824F1CB7C /* Pods-DDCategoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDCategoryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDCategoryDemo/Pods-DDCategoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A80D9B61B50A08DD34D155 /* libPods-DDCategoryDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDCategoryDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,8 +158,19 @@
 		90EA2BFC1B907341002C57E0 /* CoreCategory */ = {
 			isa = PBXGroup;
 			children = (
+				90EA2C0F1B907AA4002C57E0 /* CoreCategoryHeader.h */,
 				90EA2BFD1B907357002C57E0 /* UIDevice+DDTools.h */,
 				90EA2BFE1B907357002C57E0 /* UIDevice+DDTools.m */,
+				90EA2C001B9079C7002C57E0 /* UIView+DDFrame.h */,
+				90EA2C011B9079C7002C57E0 /* UIView+DDFrame.m */,
+				90EA2C031B9079EF002C57E0 /* UIView+DDTouch.h */,
+				90EA2C041B9079EF002C57E0 /* UIView+DDTouch.m */,
+				90EA2C061B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.h */,
+				90EA2C071B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m */,
+				90EA2C091B907A52002C57E0 /* UILabel+DDHitEdgeInsets.h */,
+				90EA2C0A1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m */,
+				90EA2C0C1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.h */,
+				90EA2C0D1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m */,
 			);
 			path = CoreCategory;
 			sourceTree = "<group>";
@@ -291,9 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EA2C0E1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m in Sources */,
 				90EA2BDF1B9072C6002C57E0 /* ViewController.m in Sources */,
+				90EA2C021B9079C7002C57E0 /* UIView+DDFrame.m in Sources */,
 				90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */,
+				90EA2C081B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m in Sources */,
 				90EA2BD91B9072C6002C57E0 /* main.m in Sources */,
+				90EA2C0B1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m in Sources */,
+				90EA2C051B9079EF002C57E0 /* UIView+DDTouch.m in Sources */,
 				90EA2BFF1B907357002C57E0 /* UIDevice+DDTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
