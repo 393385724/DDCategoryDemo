@@ -9,6 +9,11 @@
 #ifndef DDCategoryDemo_CoreCategoryHeader_h
 #define DDCategoryDemo_CoreCategoryHeader_h
 
+#import "NSObject+DDTools.h"
+#import "UIFont+DDTools.h"
+#import "UIImage+DDClip.h"
+#import "UIColor+DDTools.h"
+
 #import "UIDevice+DDTools.h"
 
 #import "UIView+DDFrame.h"
