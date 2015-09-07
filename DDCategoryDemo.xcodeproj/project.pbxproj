@@ -11,6 +11,8 @@
 		900EE8821B9D301E00AD6C58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900EE8811B9D301E00AD6C58 /* CoreGraphics.framework */; };
 		900EE8861B9D37CF00AD6C58 /* UIFont+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE8851B9D37CF00AD6C58 /* UIFont+DDTools.m */; };
 		900EE88E1B9D490700AD6C58 /* NSString+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE88D1B9D490700AD6C58 /* NSString+DDTools.m */; };
+		900EE8911B9D599A00AD6C58 /* NSDictionary+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE8901B9D599A00AD6C58 /* NSDictionary+DDTools.m */; };
+		900EE8941B9D59AC00AD6C58 /* NSArray+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE8931B9D59AC00AD6C58 /* NSArray+DDTools.m */; };
 		905ED6761B96F5E00037DE99 /* UIColor+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 905ED6751B96F5E00037DE99 /* UIColor+DDTools.m */; };
 		90EA2BD91B9072C6002C57E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BD81B9072C6002C57E0 /* main.m */; };
 		90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BDB1B9072C6002C57E0 /* AppDelegate.m */; };
@@ -47,6 +49,10 @@
 		900EE8851B9D37CF00AD6C58 /* UIFont+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DDTools.m"; sourceTree = "<group>"; };
 		900EE88C1B9D490700AD6C58 /* NSString+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDTools.h"; sourceTree = "<group>"; };
 		900EE88D1B9D490700AD6C58 /* NSString+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDTools.m"; sourceTree = "<group>"; };
+		900EE88F1B9D599A00AD6C58 /* NSDictionary+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DDTools.h"; sourceTree = "<group>"; };
+		900EE8901B9D599A00AD6C58 /* NSDictionary+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DDTools.m"; sourceTree = "<group>"; };
+		900EE8921B9D59AC00AD6C58 /* NSArray+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DDTools.h"; sourceTree = "<group>"; };
+		900EE8931B9D59AC00AD6C58 /* NSArray+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DDTools.m"; sourceTree = "<group>"; };
 		905ED6741B96F5E00037DE99 /* UIColor+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DDTools.h"; sourceTree = "<group>"; };
 		905ED6751B96F5E00037DE99 /* UIColor+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DDTools.m"; sourceTree = "<group>"; };
 		90EA2BD31B9072C6002C57E0 /* DDCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +200,10 @@
 				900EE8851B9D37CF00AD6C58 /* UIFont+DDTools.m */,
 				900EE88C1B9D490700AD6C58 /* NSString+DDTools.h */,
 				900EE88D1B9D490700AD6C58 /* NSString+DDTools.m */,
+				900EE88F1B9D599A00AD6C58 /* NSDictionary+DDTools.h */,
+				900EE8901B9D599A00AD6C58 /* NSDictionary+DDTools.m */,
+				900EE8921B9D59AC00AD6C58 /* NSArray+DDTools.h */,
+				900EE8931B9D59AC00AD6C58 /* NSArray+DDTools.m */,
 			);
 			path = CoreCategory;
 			sourceTree = "<group>";
@@ -344,6 +354,7 @@
 			files = (
 				90EA2C0E1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m in Sources */,
 				90EA2BDF1B9072C6002C57E0 /* ViewController.m in Sources */,
+				900EE8941B9D59AC00AD6C58 /* NSArray+DDTools.m in Sources */,
 				90EA2C021B9079C7002C57E0 /* UIView+DDTools.m in Sources */,
 				90EA2C121B907D08002C57E0 /* UIImage+DDTools.m in Sources */,
 				90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */,
@@ -352,6 +363,7 @@
 				90EA2BD91B9072C6002C57E0 /* main.m in Sources */,
 				90EA2C0B1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m in Sources */,
 				900EE8801B9D2FCC00AD6C58 /* NSObject+DDTools.m in Sources */,
+				900EE8911B9D599A00AD6C58 /* NSDictionary+DDTools.m in Sources */,
 				90EA2BFF1B907357002C57E0 /* UIDevice+DDTools.m in Sources */,
 				900EE88E1B9D490700AD6C58 /* NSString+DDTools.m in Sources */,
 				905ED6761B96F5E00037DE99 /* UIColor+DDTools.m in Sources */,

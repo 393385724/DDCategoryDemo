@@ -31,17 +31,14 @@
 
 @implementation NSString (DDNetWork)
 
-+ (NSString *)ddQueryStringWithDict:(NSDictionary *)dict{
-    NSString *paramString = @"";
-    for (NSString *keyString in dict) {
-        id value = [dict objectForKey:keyString];
-        paramString = [paramString stringByAppendingFormat:@"%@=%@&",keyString,value];
-    }
-    if([paramString length] > 1){
-        paramString=[paramString substringToIndex:[paramString length]-1];
-    }
-    return paramString;
+- (NSString *)ddDeleteSpecialCode{
+    NSString *string = [self stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    return string;
 }
+
 
 
 @end

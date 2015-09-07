@@ -18,6 +18,11 @@
 
 @interface NSString (DDNetWork)
 
-+ (NSString *)ddQueryStringWithDict:(NSDictionary *)dict;
+/**
+ *  处理字符串中的换行符、回车符
+ *
+ *  @return 处理后的String
+ */
+- (NSString *)ddDeleteSpecialCode;
 
 @end

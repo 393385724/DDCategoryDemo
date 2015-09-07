@@ -13,10 +13,12 @@
 #import "UIFont+DDTools.h"
 #import "UIImage+DDTools.h"
 #import "UIColor+DDTools.h"
-
 #import "UIDevice+DDTools.h"
 #import "UIView+DDTools.h"
 #import "NSString+DDTools.h"
+#import "NSDictionary+DDTools.h"
+#import "NSArray+DDTools.h"
+
 
 #import "UIButton+DDHitEdgeInsets.h"
 #import "UILabel+DDHitEdgeInsets.h"
