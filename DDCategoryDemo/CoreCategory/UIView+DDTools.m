@@ -1,14 +1,15 @@
 //
-//  UIView+DDFrame.m
+//  UIView+DDTools.m
 //  DDCategoryDemo
 //
 //  Created by lilingang on 15/8/28.
 //  Copyright (c) 2015年 LeeLingang. All rights reserved.
 //
 
-#import "UIView+DDFrame.h"
+#import "UIView+DDTools.h"
+#import "UIDevice+DDTools.h"
 
-@implementation UIView (DDFrame)
+@implementation UIView (DDTools)
 
 - (void)setDdTop:(CGFloat)ddTop{
     self.frame = CGRectMake(self.ddLeft, ddTop, self.ddWidth, self.ddHeight);
@@ -75,3 +76,27 @@
 
 
 @end
+
+@implementation UIView (DDTouch)
+
+- (void)ddAddTarget:(id)target tapAction:(SEL)action{
+    self.userInteractionEnabled = YES;
+    UIGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:gesture];
+}
+
+@end
+
+@implementation UIView (DDDraw)
+
+- (UIImage *)ddImageCapture{
+    UIGraphicsBeginImageContextWithOptions(self.ddSize, YES, [UIDevice ddScreenScale]);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *capturedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return capturedImage;
+}
+
+@end
+
+

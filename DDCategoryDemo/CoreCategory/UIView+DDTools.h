@@ -1,5 +1,5 @@
 //
-//  UIView+DDFrame.h
+//  UIView+DDTools.h
 //  DDCategoryDemo
 //
 //  Created by lilingang on 15/8/28.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (DDFrame)
+@interface UIView (DDTools)
 
 @property (nonatomic, readwrite) CGFloat ddTop;
 @property (nonatomic, readwrite) CGFloat ddBottom;
@@ -24,3 +24,16 @@
 @property (nonatomic, readonly) CGPoint ddBoundsCenter;
 
 @end
+
+@interface UIView (DDTouch)
+
+- (void)ddAddTarget:(id)target tapAction:(SEL)action;
+
+@end
+
+@interface UIView (DDDraw)
+
+- (UIImage *)ddImageCapture;
+
+@end
+
