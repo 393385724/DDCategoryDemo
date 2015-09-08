@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|  
-  s.name             = "CoreCategory"  
+  s.name             = "DDCoreCategory"  
   s.version          = "0.0.2"  
   s.summary          = "A categorys used on iOS."  
   s.homepage         = "https://github.com/393385724/DDCategoryDemo"  
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = '10.7'  
   s.requires_arc = true  
   
-  s.source_files = 'DDCategoryDemo/CoreCategory/*.{h,m}'  
+  s.source_files = 'DDCoreCategory/*.{h,m}'  
   # s.resources = 'Assets'  
   
   # s.ios.exclude_files = 'Classes/osx'  

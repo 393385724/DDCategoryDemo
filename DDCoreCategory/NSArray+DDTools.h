@@ -10,8 +10,8 @@
 
 @interface NSArray (DDFile)
 
-- (BOOL)ddWriteToDataFile:(NSString *)path atomically:(BOOL)atomically;
 + (NSDictionary *)ddReadFromDataFile:(NSString *)path;
+- (BOOL)ddWriteToDataFile:(NSString *)path atomically:(BOOL)atomically;
 
 @end
 

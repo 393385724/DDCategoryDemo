@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		900EE8801B9D2FCC00AD6C58 /* NSObject+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE87F1B9D2FCC00AD6C58 /* NSObject+DDTools.m */; };
 		900EE8821B9D301E00AD6C58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900EE8811B9D301E00AD6C58 /* CoreGraphics.framework */; };
-		900EE8861B9D37CF00AD6C58 /* UIFont+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE8851B9D37CF00AD6C58 /* UIFont+DDTools.m */; };
-		900EE88E1B9D490700AD6C58 /* NSString+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE88D1B9D490700AD6C58 /* NSString+DDTools.m */; };
-		900EE8911B9D599A00AD6C58 /* NSDictionary+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE8901B9D599A00AD6C58 /* NSDictionary+DDTools.m */; };
-		900EE8941B9D59AC00AD6C58 /* NSArray+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EE8931B9D59AC00AD6C58 /* NSArray+DDTools.m */; };
-		905ED6761B96F5E00037DE99 /* UIColor+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 905ED6751B96F5E00037DE99 /* UIColor+DDTools.m */; };
+		900EEB2A1B9E7C5D00AD6C58 /* NSArray+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB131B9E7C5D00AD6C58 /* NSArray+DDTools.m */; };
+		900EEB2B1B9E7C5D00AD6C58 /* NSDictionary+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB151B9E7C5D00AD6C58 /* NSDictionary+DDTools.m */; };
+		900EEB2C1B9E7C5D00AD6C58 /* NSObject+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB171B9E7C5D00AD6C58 /* NSObject+DDTools.m */; };
+		900EEB2D1B9E7C5D00AD6C58 /* NSString+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB191B9E7C5D00AD6C58 /* NSString+DDTools.m */; };
+		900EEB2E1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB1B1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.m */; };
+		900EEB2F1B9E7C5D00AD6C58 /* UIColor+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB1D1B9E7C5D00AD6C58 /* UIColor+DDTools.m */; };
+		900EEB301B9E7C5D00AD6C58 /* UIDevice+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB1F1B9E7C5D00AD6C58 /* UIDevice+DDTools.m */; };
+		900EEB311B9E7C5D00AD6C58 /* UIFont+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB211B9E7C5D00AD6C58 /* UIFont+DDTools.m */; };
+		900EEB321B9E7C5D00AD6C58 /* UIImage+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB231B9E7C5D00AD6C58 /* UIImage+DDTools.m */; };
+		900EEB331B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB251B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m */; };
+		900EEB341B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB271B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m */; };
+		900EEB351B9E7C5E00AD6C58 /* UIView+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */; };
 		90EA2BD91B9072C6002C57E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BD81B9072C6002C57E0 /* main.m */; };
 		90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BDB1B9072C6002C57E0 /* AppDelegate.m */; };
 		90EA2BDF1B9072C6002C57E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BDE1B9072C6002C57E0 /* ViewController.m */; };
@@ -21,12 +27,6 @@
 		90EA2BE41B9072C6002C57E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EA2BE31B9072C6002C57E0 /* Images.xcassets */; };
 		90EA2BE71B9072C6002C57E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90EA2BE51B9072C6002C57E0 /* LaunchScreen.xib */; };
 		90EA2BF31B9072C7002C57E0 /* DDCategoryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BF21B9072C7002C57E0 /* DDCategoryDemoTests.m */; };
-		90EA2BFF1B907357002C57E0 /* UIDevice+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BFE1B907357002C57E0 /* UIDevice+DDTools.m */; };
-		90EA2C021B9079C7002C57E0 /* UIView+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C011B9079C7002C57E0 /* UIView+DDTools.m */; };
-		90EA2C081B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C071B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m */; };
-		90EA2C0B1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C0A1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m */; };
-		90EA2C0E1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C0D1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m */; };
-		90EA2C121B907D08002C57E0 /* UIImage+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2C111B907D08002C57E0 /* UIImage+DDTools.m */; };
 		91CC04E05215518C7DF36DFC /* libPods-DDCategoryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A80D9B61B50A08DD34D155 /* libPods-DDCategoryDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -42,19 +42,32 @@
 
 /* Begin PBXFileReference section */
 		6971AE79625816366E5E1867 /* Pods-DDCategoryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDCategoryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDCategoryDemo/Pods-DDCategoryDemo.release.xcconfig"; sourceTree = "<group>"; };
-		900EE87E1B9D2FCC00AD6C58 /* NSObject+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DDTools.h"; sourceTree = "<group>"; };
-		900EE87F1B9D2FCC00AD6C58 /* NSObject+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DDTools.m"; sourceTree = "<group>"; };
 		900EE8811B9D301E00AD6C58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		900EE8841B9D37CF00AD6C58 /* UIFont+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DDTools.h"; sourceTree = "<group>"; };
-		900EE8851B9D37CF00AD6C58 /* UIFont+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DDTools.m"; sourceTree = "<group>"; };
-		900EE88C1B9D490700AD6C58 /* NSString+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDTools.h"; sourceTree = "<group>"; };
-		900EE88D1B9D490700AD6C58 /* NSString+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDTools.m"; sourceTree = "<group>"; };
-		900EE88F1B9D599A00AD6C58 /* NSDictionary+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DDTools.h"; sourceTree = "<group>"; };
-		900EE8901B9D599A00AD6C58 /* NSDictionary+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DDTools.m"; sourceTree = "<group>"; };
-		900EE8921B9D59AC00AD6C58 /* NSArray+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DDTools.h"; sourceTree = "<group>"; };
-		900EE8931B9D59AC00AD6C58 /* NSArray+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DDTools.m"; sourceTree = "<group>"; };
-		905ED6741B96F5E00037DE99 /* UIColor+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DDTools.h"; sourceTree = "<group>"; };
-		905ED6751B96F5E00037DE99 /* UIColor+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DDTools.m"; sourceTree = "<group>"; };
+		900EEB111B9E7C5D00AD6C58 /* DDCategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCategoryHeader.h; sourceTree = "<group>"; };
+		900EEB121B9E7C5D00AD6C58 /* NSArray+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DDTools.h"; sourceTree = "<group>"; };
+		900EEB131B9E7C5D00AD6C58 /* NSArray+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DDTools.m"; sourceTree = "<group>"; };
+		900EEB141B9E7C5D00AD6C58 /* NSDictionary+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DDTools.h"; sourceTree = "<group>"; };
+		900EEB151B9E7C5D00AD6C58 /* NSDictionary+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DDTools.m"; sourceTree = "<group>"; };
+		900EEB161B9E7C5D00AD6C58 /* NSObject+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DDTools.h"; sourceTree = "<group>"; };
+		900EEB171B9E7C5D00AD6C58 /* NSObject+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DDTools.m"; sourceTree = "<group>"; };
+		900EEB181B9E7C5D00AD6C58 /* NSString+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDTools.h"; sourceTree = "<group>"; };
+		900EEB191B9E7C5D00AD6C58 /* NSString+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDTools.m"; sourceTree = "<group>"; };
+		900EEB1A1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
+		900EEB1B1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
+		900EEB1C1B9E7C5D00AD6C58 /* UIColor+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DDTools.h"; sourceTree = "<group>"; };
+		900EEB1D1B9E7C5D00AD6C58 /* UIColor+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DDTools.m"; sourceTree = "<group>"; };
+		900EEB1E1B9E7C5D00AD6C58 /* UIDevice+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DDTools.h"; sourceTree = "<group>"; };
+		900EEB1F1B9E7C5D00AD6C58 /* UIDevice+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DDTools.m"; sourceTree = "<group>"; };
+		900EEB201B9E7C5D00AD6C58 /* UIFont+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DDTools.h"; sourceTree = "<group>"; };
+		900EEB211B9E7C5D00AD6C58 /* UIFont+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DDTools.m"; sourceTree = "<group>"; };
+		900EEB221B9E7C5D00AD6C58 /* UIImage+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DDTools.h"; sourceTree = "<group>"; };
+		900EEB231B9E7C5D00AD6C58 /* UIImage+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DDTools.m"; sourceTree = "<group>"; };
+		900EEB241B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
+		900EEB251B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
+		900EEB261B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
+		900EEB271B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
+		900EEB281B9E7C5D00AD6C58 /* UIView+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDTools.h"; sourceTree = "<group>"; };
+		900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDTools.m"; sourceTree = "<group>"; };
 		90EA2BD31B9072C6002C57E0 /* DDCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EA2BD71B9072C6002C57E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90EA2BD81B9072C6002C57E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,19 +81,6 @@
 		90EA2BEC1B9072C7002C57E0 /* DDCategoryDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDCategoryDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EA2BF11B9072C7002C57E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90EA2BF21B9072C7002C57E0 /* DDCategoryDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCategoryDemoTests.m; sourceTree = "<group>"; };
-		90EA2BFD1B907357002C57E0 /* UIDevice+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DDTools.h"; sourceTree = "<group>"; };
-		90EA2BFE1B907357002C57E0 /* UIDevice+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DDTools.m"; sourceTree = "<group>"; };
-		90EA2C001B9079C7002C57E0 /* UIView+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDTools.h"; sourceTree = "<group>"; };
-		90EA2C011B9079C7002C57E0 /* UIView+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDTools.m"; sourceTree = "<group>"; };
-		90EA2C061B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
-		90EA2C071B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
-		90EA2C091B907A52002C57E0 /* UILabel+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
-		90EA2C0A1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
-		90EA2C0C1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
-		90EA2C0D1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
-		90EA2C0F1B907AA4002C57E0 /* CoreCategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreCategoryHeader.h; sourceTree = "<group>"; };
-		90EA2C101B907D08002C57E0 /* UIImage+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DDTools.h"; sourceTree = "<group>"; };
-		90EA2C111B907D08002C57E0 /* UIImage+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DDTools.m"; sourceTree = "<group>"; };
 		95B6D7C289542BD824F1CB7C /* Pods-DDCategoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDCategoryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDCategoryDemo/Pods-DDCategoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A80D9B61B50A08DD34D155 /* libPods-DDCategoryDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDCategoryDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,9 +114,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		900EEB101B9E7C5D00AD6C58 /* DDCoreCategory */ = {
+			isa = PBXGroup;
+			children = (
+				900EEB111B9E7C5D00AD6C58 /* DDCategoryHeader.h */,
+				900EEB121B9E7C5D00AD6C58 /* NSArray+DDTools.h */,
+				900EEB131B9E7C5D00AD6C58 /* NSArray+DDTools.m */,
+				900EEB141B9E7C5D00AD6C58 /* NSDictionary+DDTools.h */,
+				900EEB151B9E7C5D00AD6C58 /* NSDictionary+DDTools.m */,
+				900EEB161B9E7C5D00AD6C58 /* NSObject+DDTools.h */,
+				900EEB171B9E7C5D00AD6C58 /* NSObject+DDTools.m */,
+				900EEB181B9E7C5D00AD6C58 /* NSString+DDTools.h */,
+				900EEB191B9E7C5D00AD6C58 /* NSString+DDTools.m */,
+				900EEB1A1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.h */,
+				900EEB1B1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.m */,
+				900EEB1C1B9E7C5D00AD6C58 /* UIColor+DDTools.h */,
+				900EEB1D1B9E7C5D00AD6C58 /* UIColor+DDTools.m */,
+				900EEB1E1B9E7C5D00AD6C58 /* UIDevice+DDTools.h */,
+				900EEB1F1B9E7C5D00AD6C58 /* UIDevice+DDTools.m */,
+				900EEB201B9E7C5D00AD6C58 /* UIFont+DDTools.h */,
+				900EEB211B9E7C5D00AD6C58 /* UIFont+DDTools.m */,
+				900EEB221B9E7C5D00AD6C58 /* UIImage+DDTools.h */,
+				900EEB231B9E7C5D00AD6C58 /* UIImage+DDTools.m */,
+				900EEB241B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.h */,
+				900EEB251B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m */,
+				900EEB261B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.h */,
+				900EEB271B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m */,
+				900EEB281B9E7C5D00AD6C58 /* UIView+DDTools.h */,
+				900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */,
+			);
+			path = DDCoreCategory;
+			sourceTree = "<group>";
+		};
 		90EA2BCA1B9072C6002C57E0 = {
 			isa = PBXGroup;
 			children = (
+				900EEB101B9E7C5D00AD6C58 /* DDCoreCategory */,
 				90EA2BD51B9072C6002C57E0 /* DDCategoryDemo */,
 				90EA2BEF1B9072C7002C57E0 /* DDCategoryDemoTests */,
 				90EA2BD41B9072C6002C57E0 /* Products */,
@@ -137,7 +170,6 @@
 		90EA2BD51B9072C6002C57E0 /* DDCategoryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				90EA2BFC1B907341002C57E0 /* CoreCategory */,
 				90EA2BDA1B9072C6002C57E0 /* AppDelegate.h */,
 				90EA2BDB1B9072C6002C57E0 /* AppDelegate.m */,
 				90EA2BDD1B9072C6002C57E0 /* ViewController.h */,
@@ -174,38 +206,6 @@
 				90EA2BF11B9072C7002C57E0 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		90EA2BFC1B907341002C57E0 /* CoreCategory */ = {
-			isa = PBXGroup;
-			children = (
-				90EA2C0F1B907AA4002C57E0 /* CoreCategoryHeader.h */,
-				90EA2BFD1B907357002C57E0 /* UIDevice+DDTools.h */,
-				90EA2BFE1B907357002C57E0 /* UIDevice+DDTools.m */,
-				90EA2C001B9079C7002C57E0 /* UIView+DDTools.h */,
-				90EA2C011B9079C7002C57E0 /* UIView+DDTools.m */,
-				90EA2C061B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.h */,
-				90EA2C071B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m */,
-				90EA2C091B907A52002C57E0 /* UILabel+DDHitEdgeInsets.h */,
-				90EA2C0A1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m */,
-				90EA2C0C1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.h */,
-				90EA2C0D1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m */,
-				90EA2C101B907D08002C57E0 /* UIImage+DDTools.h */,
-				90EA2C111B907D08002C57E0 /* UIImage+DDTools.m */,
-				905ED6741B96F5E00037DE99 /* UIColor+DDTools.h */,
-				905ED6751B96F5E00037DE99 /* UIColor+DDTools.m */,
-				900EE87E1B9D2FCC00AD6C58 /* NSObject+DDTools.h */,
-				900EE87F1B9D2FCC00AD6C58 /* NSObject+DDTools.m */,
-				900EE8841B9D37CF00AD6C58 /* UIFont+DDTools.h */,
-				900EE8851B9D37CF00AD6C58 /* UIFont+DDTools.m */,
-				900EE88C1B9D490700AD6C58 /* NSString+DDTools.h */,
-				900EE88D1B9D490700AD6C58 /* NSString+DDTools.m */,
-				900EE88F1B9D599A00AD6C58 /* NSDictionary+DDTools.h */,
-				900EE8901B9D599A00AD6C58 /* NSDictionary+DDTools.m */,
-				900EE8921B9D59AC00AD6C58 /* NSArray+DDTools.h */,
-				900EE8931B9D59AC00AD6C58 /* NSArray+DDTools.m */,
-			);
-			path = CoreCategory;
 			sourceTree = "<group>";
 		};
 		C8ECA4603BA235BEFE82487C /* Frameworks */ = {
@@ -352,21 +352,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90EA2C0E1B907A67002C57E0 /* UIImageView+DDHitEdgeInsets.m in Sources */,
+				900EEB2A1B9E7C5D00AD6C58 /* NSArray+DDTools.m in Sources */,
+				900EEB2B1B9E7C5D00AD6C58 /* NSDictionary+DDTools.m in Sources */,
+				900EEB351B9E7C5E00AD6C58 /* UIView+DDTools.m in Sources */,
+				900EEB2E1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.m in Sources */,
+				900EEB2F1B9E7C5D00AD6C58 /* UIColor+DDTools.m in Sources */,
 				90EA2BDF1B9072C6002C57E0 /* ViewController.m in Sources */,
-				900EE8941B9D59AC00AD6C58 /* NSArray+DDTools.m in Sources */,
-				90EA2C021B9079C7002C57E0 /* UIView+DDTools.m in Sources */,
-				90EA2C121B907D08002C57E0 /* UIImage+DDTools.m in Sources */,
+				900EEB301B9E7C5D00AD6C58 /* UIDevice+DDTools.m in Sources */,
+				900EEB311B9E7C5D00AD6C58 /* UIFont+DDTools.m in Sources */,
+				900EEB2D1B9E7C5D00AD6C58 /* NSString+DDTools.m in Sources */,
+				900EEB2C1B9E7C5D00AD6C58 /* NSObject+DDTools.m in Sources */,
+				900EEB341B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m in Sources */,
+				900EEB321B9E7C5D00AD6C58 /* UIImage+DDTools.m in Sources */,
 				90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */,
-				900EE8861B9D37CF00AD6C58 /* UIFont+DDTools.m in Sources */,
-				90EA2C081B907A3D002C57E0 /* UIButton+DDHitEdgeInsets.m in Sources */,
 				90EA2BD91B9072C6002C57E0 /* main.m in Sources */,
-				90EA2C0B1B907A52002C57E0 /* UILabel+DDHitEdgeInsets.m in Sources */,
-				900EE8801B9D2FCC00AD6C58 /* NSObject+DDTools.m in Sources */,
-				900EE8911B9D599A00AD6C58 /* NSDictionary+DDTools.m in Sources */,
-				90EA2BFF1B907357002C57E0 /* UIDevice+DDTools.m in Sources */,
-				900EE88E1B9D490700AD6C58 /* NSString+DDTools.m in Sources */,
-				905ED6761B96F5E00037DE99 /* UIColor+DDTools.m in Sources */,
+				900EEB331B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

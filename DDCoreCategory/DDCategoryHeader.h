@@ -1,13 +1,13 @@
 //
-//  CoreCategoryHeader.h
+//  DDCategoryHeader.h
 //  DDCategoryDemo
 //
 //  Created by lilingang on 15/8/28.
 //  Copyright (c) 2015年 LeeLingang. All rights reserved.
 //
 
-#ifndef DDCategoryDemo_CoreCategoryHeader_h
-#define DDCategoryDemo_CoreCategoryHeader_h
+#ifndef DDCategoryDemo_DDCategoryHeader_h
+#define DDCategoryDemo_DDCategoryHeader_h
 
 #import "NSObject+DDTools.h"
 #import "UIFont+DDTools.h"
