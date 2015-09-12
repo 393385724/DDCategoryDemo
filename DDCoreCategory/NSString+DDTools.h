@@ -23,6 +23,7 @@
 + (NSString *)ddBuildVersion;
 + (NSString *)ddSystemTimeZone;
 + (NSString *)ddSystemLanguage;
++ (NSString *)ddCountryCode;
 + (NSString *)ddCallid;
 
 @end

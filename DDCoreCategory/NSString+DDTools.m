@@ -66,6 +66,10 @@
     return currentLanguage;
 }
 
++ (NSString *)ddCountryCode{
+    return [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
+}
+
 + (NSString *)ddCallid{
     NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970] * 1000;
     NSString *timeStampStr = [NSString stringWithFormat:@"%.0f",timestamp];
