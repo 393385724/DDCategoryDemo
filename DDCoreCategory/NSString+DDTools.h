@@ -16,6 +16,17 @@
 
 @end
 
+@interface NSString (DDSystem)
+
++ (NSString *)ddBundleIdentifier;
++ (NSString *)ddAppVersion;
++ (NSString *)ddBuildVersion;
++ (NSString *)ddSystemTimeZone;
++ (NSString *)ddSystemLanguage;
++ (NSString *)ddCallid;
+
+@end
+
 @interface NSString (DDNetWork)
 
 /**

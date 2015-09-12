@@ -20,6 +20,7 @@
 		900EEB331B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB251B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m */; };
 		900EEB341B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB271B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m */; };
 		900EEB351B9E7C5E00AD6C58 /* UIView+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */; };
+		90D1329E1BA3A150001E6BFF /* NSError+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1329D1BA3A150001E6BFF /* NSError+DDTools.m */; };
 		90EA2BD91B9072C6002C57E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BD81B9072C6002C57E0 /* main.m */; };
 		90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BDB1B9072C6002C57E0 /* AppDelegate.m */; };
 		90EA2BDF1B9072C6002C57E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BDE1B9072C6002C57E0 /* ViewController.m */; };
@@ -68,6 +69,8 @@
 		900EEB271B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
 		900EEB281B9E7C5D00AD6C58 /* UIView+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DDTools.h"; sourceTree = "<group>"; };
 		900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDTools.m"; sourceTree = "<group>"; };
+		90D1329C1BA3A150001E6BFF /* NSError+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DDTools.h"; sourceTree = "<group>"; };
+		90D1329D1BA3A150001E6BFF /* NSError+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+DDTools.m"; sourceTree = "<group>"; };
 		90EA2BD31B9072C6002C57E0 /* DDCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EA2BD71B9072C6002C57E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90EA2BD81B9072C6002C57E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				900EEB271B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m */,
 				900EEB281B9E7C5D00AD6C58 /* UIView+DDTools.h */,
 				900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */,
+				90D1329C1BA3A150001E6BFF /* NSError+DDTools.h */,
+				90D1329D1BA3A150001E6BFF /* NSError+DDTools.m */,
 			);
 			path = DDCoreCategory;
 			sourceTree = "<group>";
@@ -363,6 +368,7 @@
 				900EEB2D1B9E7C5D00AD6C58 /* NSString+DDTools.m in Sources */,
 				900EEB2C1B9E7C5D00AD6C58 /* NSObject+DDTools.m in Sources */,
 				900EEB341B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m in Sources */,
+				90D1329E1BA3A150001E6BFF /* NSError+DDTools.m in Sources */,
 				900EEB321B9E7C5D00AD6C58 /* UIImage+DDTools.m in Sources */,
 				90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */,
 				90EA2BD91B9072C6002C57E0 /* main.m in Sources */,

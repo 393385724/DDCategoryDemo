@@ -11,7 +11,8 @@
 @interface UIDevice (DDSystem)
 
 + (NSString *)ddUniquenessIdentifier;
-+ (NSString *)ddAppVersion;
++ (NSString *)ddSystemVersion;
++ (NSString *)ddDeviceType;
 + (BOOL)ddIsJailBreak;
 + (NSString *)ddMachineName;
 

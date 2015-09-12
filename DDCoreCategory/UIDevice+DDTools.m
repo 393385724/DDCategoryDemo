@@ -29,11 +29,18 @@ NSString *const DDSSKeychainUniquenessIdentifierAccount = @"DDSSKeychainUniquene
     return identifier;
 }
 
-+ (NSString *)ddAppVersion{
-    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    return version;
++ (NSString *)ddSystemVersion{
+    return [[UIDevice currentDevice] systemVersion];
 }
 
++ (NSString *)ddDeviceType{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        return [NSString stringWithFormat:@"%@_%@",@"ios",@"phone"];
+    }
+    else {
+        return [NSString stringWithFormat:@"%@_%@",@"ios",@"pad"];
+    }
+}
 
 + (BOOL)ddIsJailBreak {
     BOOL jailbroken = NO;
@@ -81,15 +88,15 @@ NSString *const DDSSKeychainUniquenessIdentifierAccount = @"DDSSKeychainUniquene
 #pragma mark - Private Methods
 
 + (BOOL)ddSystemVersionLessThanVersion:(NSString *)version{
-    return [[[UIDevice currentDevice] systemVersion] compare:version options:NSNumericSearch] == NSOrderedAscending;
+    return [[self ddSystemVersion] compare:version options:NSNumericSearch] == NSOrderedAscending;
 }
 
 + (BOOL)ddSystemVersionEqualToVersion:(NSString *)version{
-    return [[[UIDevice currentDevice] systemVersion] compare:version options:NSNumericSearch] == NSOrderedSame;
+    return [[self ddSystemVersion] compare:version options:NSNumericSearch] == NSOrderedSame;
 }
 
 + (BOOL)ddSystemVersionGreaterThanVersion:(NSString *)version{
-    return [[[UIDevice currentDevice] systemVersion] compare:version options:NSNumericSearch] == NSOrderedDescending;
+    return [[self ddSystemVersion] compare:version options:NSNumericSearch] == NSOrderedDescending;
 }
 
 

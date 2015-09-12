@@ -29,6 +29,51 @@
 
 @end
 
+@implementation NSString (DDSystem)
+
++ (NSString *)ddAppVersion{
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    return version;
+}
+
++ (NSString *)ddBundleIdentifier{
+    NSString *bundleIdentifier = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
+    return bundleIdentifier;
+}
+
++ (NSString *)ddBuildVersion{
+    NSString *bundleVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    return bundleVersion;
+}
+
++ (NSString *)ddSystemTimeZone{
+    NSString *timeZone = [[NSTimeZone systemTimeZone] name];
+    return timeZone;
+}
+
++ (NSString *)ddSystemLanguage{
+    NSArray *languages = [NSLocale preferredLanguages];
+    NSString *currentLanguage = [languages objectAtIndex:0];
+    if ([currentLanguage isEqualToString:@"zh-Hans"]){
+        return @"zh";
+    }
+    else if ([currentLanguage isEqualToString:@"zh-Hant"]){
+        return @"zh_TW";
+    }
+    else if ([currentLanguage isEqualToString:@"zh-Hant-HK"]){
+        return @"zh_HK";
+    }
+    return currentLanguage;
+}
+
++ (NSString *)ddCallid{
+    NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970] * 1000;
+    NSString *timeStampStr = [NSString stringWithFormat:@"%.0f",timestamp];
+    return timeStampStr;
+}
+@end
+
+
 @implementation NSString (DDNetWork)
 
 - (NSString *)ddDeleteSpecialCode{
@@ -38,7 +83,5 @@
     string = [string stringByReplacingOccurrencesOfString:@"\t" withString:@""];
     return string;
 }
-
-
 
 @end
