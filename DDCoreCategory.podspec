@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = '10.7'  
   s.requires_arc = true  
   
-  s.source_files = 'DDCoreCategory/*.{h,m}'  
+  s.source_files = 'DDCoreCategory/External/*.{m,h}','DDCoreCategory/*.{m,h}'  
   # s.resources = 'Assets'  
   
   # s.ios.exclude_files = 'Classes/osx'  
