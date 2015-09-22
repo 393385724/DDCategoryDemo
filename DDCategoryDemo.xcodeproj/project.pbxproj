@@ -21,6 +21,9 @@
 		900EEB341B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB271B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m */; };
 		900EEB351B9E7C5E00AD6C58 /* UIView+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */; };
 		90D1329E1BA3A150001E6BFF /* NSError+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D1329D1BA3A150001E6BFF /* NSError+DDTools.m */; };
+		90D3D12E1BB12293004A5B17 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D3D12D1BB12293004A5B17 /* CoreLocation.framework */; };
+		90D3D1311BB122C3004A5B17 /* CLLocation+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D3D1301BB122C3004A5B17 /* CLLocation+DDTools.m */; settings = {ASSET_TAGS = (); }; };
+		90D3D1351BB123CA004A5B17 /* DDChinaLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D3D1341BB123CA004A5B17 /* DDChinaLocation.m */; settings = {ASSET_TAGS = (); }; };
 		90EA2BD91B9072C6002C57E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BD81B9072C6002C57E0 /* main.m */; };
 		90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BDB1B9072C6002C57E0 /* AppDelegate.m */; };
 		90EA2BDF1B9072C6002C57E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2BDE1B9072C6002C57E0 /* ViewController.m */; };
@@ -71,6 +74,12 @@
 		900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDTools.m"; sourceTree = "<group>"; };
 		90D1329C1BA3A150001E6BFF /* NSError+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DDTools.h"; sourceTree = "<group>"; };
 		90D1329D1BA3A150001E6BFF /* NSError+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+DDTools.m"; sourceTree = "<group>"; };
+		90D3D12B1BB1225D004A5B17 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		90D3D12D1BB12293004A5B17 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		90D3D12F1BB122C3004A5B17 /* CLLocation+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+DDTools.h"; sourceTree = "<group>"; };
+		90D3D1301BB122C3004A5B17 /* CLLocation+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+DDTools.m"; sourceTree = "<group>"; };
+		90D3D1331BB123CA004A5B17 /* DDChinaLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDChinaLocation.h; sourceTree = "<group>"; };
+		90D3D1341BB123CA004A5B17 /* DDChinaLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDChinaLocation.m; sourceTree = "<group>"; };
 		90EA2BD31B9072C6002C57E0 /* DDCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EA2BD71B9072C6002C57E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90EA2BD81B9072C6002C57E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D3D12E1BB12293004A5B17 /* CoreLocation.framework in Frameworks */,
 				900EE8821B9D301E00AD6C58 /* CoreGraphics.framework in Frameworks */,
 				91CC04E05215518C7DF36DFC /* libPods-DDCategoryDemo.a in Frameworks */,
 			);
@@ -120,6 +130,7 @@
 		900EEB101B9E7C5D00AD6C58 /* DDCoreCategory */ = {
 			isa = PBXGroup;
 			children = (
+				90D3D1321BB123B2004A5B17 /* External */,
 				900EEB111B9E7C5D00AD6C58 /* DDCategoryHeader.h */,
 				900EEB121B9E7C5D00AD6C58 /* NSArray+DDTools.h */,
 				900EEB131B9E7C5D00AD6C58 /* NSArray+DDTools.m */,
@@ -147,8 +158,19 @@
 				900EEB291B9E7C5D00AD6C58 /* UIView+DDTools.m */,
 				90D1329C1BA3A150001E6BFF /* NSError+DDTools.h */,
 				90D1329D1BA3A150001E6BFF /* NSError+DDTools.m */,
+				90D3D12F1BB122C3004A5B17 /* CLLocation+DDTools.h */,
+				90D3D1301BB122C3004A5B17 /* CLLocation+DDTools.m */,
 			);
 			path = DDCoreCategory;
+			sourceTree = "<group>";
+		};
+		90D3D1321BB123B2004A5B17 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				90D3D1331BB123CA004A5B17 /* DDChinaLocation.h */,
+				90D3D1341BB123CA004A5B17 /* DDChinaLocation.m */,
+			);
+			path = External;
 			sourceTree = "<group>";
 		};
 		90EA2BCA1B9072C6002C57E0 = {
@@ -216,6 +238,8 @@
 		C8ECA4603BA235BEFE82487C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90D3D12D1BB12293004A5B17 /* CoreLocation.framework */,
+				90D3D12B1BB1225D004A5B17 /* MapKit.framework */,
 				900EE8811B9D301E00AD6C58 /* CoreGraphics.framework */,
 				B4A80D9B61B50A08DD34D155 /* libPods-DDCategoryDemo.a */,
 			);
@@ -363,6 +387,7 @@
 				900EEB2E1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.m in Sources */,
 				900EEB2F1B9E7C5D00AD6C58 /* UIColor+DDTools.m in Sources */,
 				90EA2BDF1B9072C6002C57E0 /* ViewController.m in Sources */,
+				90D3D1311BB122C3004A5B17 /* CLLocation+DDTools.m in Sources */,
 				900EEB301B9E7C5D00AD6C58 /* UIDevice+DDTools.m in Sources */,
 				900EEB311B9E7C5D00AD6C58 /* UIFont+DDTools.m in Sources */,
 				900EEB2D1B9E7C5D00AD6C58 /* NSString+DDTools.m in Sources */,
@@ -370,6 +395,7 @@
 				900EEB341B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m in Sources */,
 				90D1329E1BA3A150001E6BFF /* NSError+DDTools.m in Sources */,
 				900EEB321B9E7C5D00AD6C58 /* UIImage+DDTools.m in Sources */,
+				90D3D1351BB123CA004A5B17 /* DDChinaLocation.m in Sources */,
 				90EA2BDC1B9072C6002C57E0 /* AppDelegate.m in Sources */,
 				90EA2BD91B9072C6002C57E0 /* main.m in Sources */,
 				900EEB331B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m in Sources */,

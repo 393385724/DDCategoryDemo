@@ -5,4 +5,5 @@ workspace 'DDCategoryDemo'
 target :DDCategoryDemo do
   xcodeproj 'DDCategoryDemo'
 	pod 'SSKeychain', '~> 1.2.3'
+    pod 'JZLocationConverter', '~> 1.0.0'
 end

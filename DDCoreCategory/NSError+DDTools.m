@@ -12,7 +12,7 @@
 @implementation NSError (DDTools)
 
 + (NSError *)errorWithTitle:(NSString *)title code:(NSInteger)code otherInfo:(NSDictionary *)otherInfo{
-    return [self errorWithTitle:NSStringFromClass([self class]) description:nil code:code otherInfo:otherInfo];
+    return [self errorWithTitle:title description:nil code:code otherInfo:otherInfo];
 }
 
 + (NSError *)errorWithTitle:(NSString *)title description:(NSString *)description code:(NSInteger)code otherInfo:(NSDictionary *)otherInfo{
