@@ -19,7 +19,6 @@
 #import "NSDictionary+DDTools.h"
 #import "NSArray+DDTools.h"
 #import "NSError+DDTools.h"
-#import "CLLocation+DDTools.h"
 
 
 #import "UIButton+DDHitEdgeInsets.h"

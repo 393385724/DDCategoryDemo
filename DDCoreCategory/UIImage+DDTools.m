@@ -65,6 +65,19 @@
 
 @implementation UIImage (DDDraw)
 
++ (UIImage *)ddImageWithColor:(UIColor *)color{
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 - (UIImage *)ddImageRotatedWithOrientation{
     if (self.imageOrientation == UIImageOrientationUp) {
         return self;
@@ -214,5 +227,25 @@
     }
     return transform;
 }
+
+@end
+
+@implementation UIImage (DDZoom)
+
++ (NSData *)imageData:(NSData *)imageData maxBytes:(CGFloat)maxBytes{
+    if (imageData.length < maxBytes) {
+        return imageData;
+    }
+    UIImage *image = [UIImage imageWithData:imageData];
+    CGFloat scale = sqrt([imageData length]/maxBytes)*[UIScreen mainScreen].scale;
+    CGFloat newWidth = floorf(image.size.width/scale);
+    CGFloat newHeight = floorf(image.size.height/scale);
+    UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight));
+    [image drawInRect:CGRectMake(0, 0, newWidth, newHeight)];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return UIImagePNGRepresentation(scaledImage);
+}
+
 
 @end

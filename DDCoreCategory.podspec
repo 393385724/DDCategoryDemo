@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = '10.7'  
   s.requires_arc = true  
   
-  s.source_files = 'DDCoreCategory/External/*.{m,h}','DDCoreCategory/*.{m,h}'  
+  s.source_files = 'DDCoreCategory/*.{m,h}'  
   # s.resources = 'Assets'  
   
   # s.ios.exclude_files = 'Classes/osx'  
@@ -22,5 +22,4 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Classes/**/*.{h,m}'  
   s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit' ,'CoreLocation'
   s.dependency 'SSKeychain', '~> 1.2.3'
-  s.dependency 'JZLocationConverter', '~> 1.0.0'
 end  

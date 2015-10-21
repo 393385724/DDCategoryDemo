@@ -24,7 +24,17 @@
 
 @interface UIImage (DDDraw)
 
++ (UIImage *)ddImageWithColor:(UIColor *)color;
 - (UIImage *)ddImageRotatedWithOrientation;
 - (UIImage *)ddImageByApplyingAlpha:(CGFloat)alpha;
 
 @end
+
+@interface UIImage (DDZoom)
+
++ (NSData *)imageData:(NSData *)imageData maxBytes:(CGFloat)maxBytes;
+
+@end
+
+
+
