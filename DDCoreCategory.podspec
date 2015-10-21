@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "DDCoreCategory"  
-  s.version          = "0.0.5"  
+  s.version          = "0.0.6"  
   s.summary          = "A categorys used on iOS."  
   s.homepage         = "https://github.com/393385724/DDCategoryDemo"  
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"  
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   # s.ios.exclude_files = 'Classes/osx'  
   # s.osx.exclude_files = 'Classes/ios'  
   # s.public_header_files = 'Classes/**/*.{h,m}'  
-  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit' ,'CoreLocation'
+  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
   s.dependency 'SSKeychain', '~> 1.2.3'
 end  
