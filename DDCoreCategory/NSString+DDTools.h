@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSString (DDProcess)
+
+- (NSString *)ddTrimEndsSpace;
+- (NSString *)ddTrimAllSpace;
+- (NSString *)ddTrimSpecialCode;
+
+- (BOOL)ddIsEmpty;
+- (NSDictionary *)ddStringToDictionary;
+
+@end
+
 @interface NSString (DDPath)
 
 + (NSString *)ddDocumentsPath;
@@ -25,16 +36,5 @@
 + (NSString *)ddSystemLanguage;
 + (NSString *)ddCountryCode;
 + (NSString *)ddCallid;
-
-@end
-
-@interface NSString (DDNetWork)
-
-/**
- *  处理字符串中的换行符、回车符
- *
- *  @return 处理后的String
- */
-- (NSString *)ddDeleteSpecialCode;
 
 @end

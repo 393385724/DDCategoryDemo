@@ -8,6 +8,42 @@
 
 #import "NSString+DDTools.h"
 
+@implementation NSString (DDProcess)
+
+- (NSString *)ddTrimEndsSpace{
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+- (NSString *)ddTrimAllSpace{
+    return  [[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""];
+}
+
+- (NSString *)ddTrimSpecialCode{
+    NSString *string = [self stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    return string;
+}
+
+- (BOOL)ddIsEmpty{
+    if ([[self ddTrimEndsSpace] length]) {
+        return NO;
+    }
+    return YES;
+}
+
+- (NSDictionary *)ddStringToDictionary{
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+    if (error) {
+        NSLog(@"string to dictionary error:%@",error);
+    }
+    return dict;
+}
+@end
+
 @implementation NSString (DDPath)
 
 + (NSString *)ddDocumentsPath{
@@ -75,17 +111,4 @@
     NSString *timeStampStr = [NSString stringWithFormat:@"%.0f",timestamp];
     return timeStampStr;
 }
-@end
-
-
-@implementation NSString (DDNetWork)
-
-- (NSString *)ddDeleteSpecialCode{
-    NSString *string = [self stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    string = [string stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-    return string;
-}
-
 @end

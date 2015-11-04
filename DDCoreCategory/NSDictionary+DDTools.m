@@ -7,7 +7,28 @@
 //
 
 #import "NSDictionary+DDTools.h"
+#import "NSString+DDTools.h"
 
+@implementation NSDictionary (DDProcess)
+
+- (NSString *)ddDictionaryToJsonStringTrim:(BOOL)trim{
+    NSString *jsonString = @"";
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:&error];
+    if (! jsonData) {
+        NSLog(@"dictionary to json error: %@", error);
+    } else {
+        jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        if (trim) {
+            jsonString = [jsonString ddTrimSpecialCode];
+        }
+    }
+    return jsonString;
+}
+
+@end
 
 @implementation NSDictionary (DDFile)
 

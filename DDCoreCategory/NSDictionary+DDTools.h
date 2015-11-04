@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSDictionary (DDProcess)
+
+- (NSString *)ddDictionaryToJsonStringTrim:(BOOL)trim;
+
+@end
+
 @interface NSDictionary (DDFile)
 
 + (NSDictionary *)ddReadFromDataFile:(NSString *)path;
