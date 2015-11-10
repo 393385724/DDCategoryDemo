@@ -33,6 +33,15 @@
     return YES;
 }
 
+- (BOOL)ddIsDecimalDigit{
+    NSString *string = [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    if(string.length > 0){
+        return NO;
+    }
+    return YES;
+}
+
+
 - (NSDictionary *)ddStringToDictionary{
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
@@ -90,13 +99,13 @@
 + (NSString *)ddSystemLanguage{
     NSArray *languages = [NSLocale preferredLanguages];
     NSString *currentLanguage = [languages objectAtIndex:0];
-    if ([currentLanguage isEqualToString:@"zh-Hans"]){
+    if ([currentLanguage hasPrefix:@"zh-Hans"]){
         return @"zh";
     }
-    else if ([currentLanguage isEqualToString:@"zh-Hant"]){
+    else if ([currentLanguage hasPrefix:@"zh-Hant"]){
         return @"zh_TW";
     }
-    else if ([currentLanguage isEqualToString:@"zh-Hant-HK"]){
+    else if ([currentLanguage hasPrefix:@"zh-Hant-HK"]){
         return @"zh_HK";
     }
     return currentLanguage;

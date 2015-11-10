@@ -15,6 +15,7 @@
 - (NSString *)ddTrimSpecialCode;
 
 - (BOOL)ddIsEmpty;
+- (BOOL)ddIsDecimalDigit;
 - (NSDictionary *)ddStringToDictionary;
 
 @end
