@@ -15,7 +15,6 @@
 		900EEB2E1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB1B1B9E7C5D00AD6C58 /* UIButton+DDHitEdgeInsets.m */; };
 		900EEB2F1B9E7C5D00AD6C58 /* UIColor+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB1D1B9E7C5D00AD6C58 /* UIColor+DDTools.m */; };
 		900EEB301B9E7C5D00AD6C58 /* UIDevice+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB1F1B9E7C5D00AD6C58 /* UIDevice+DDTools.m */; };
-		900EEB311B9E7C5D00AD6C58 /* UIFont+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB211B9E7C5D00AD6C58 /* UIFont+DDTools.m */; };
 		900EEB321B9E7C5D00AD6C58 /* UIImage+DDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB231B9E7C5D00AD6C58 /* UIImage+DDTools.m */; };
 		900EEB331B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB251B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.m */; };
 		900EEB341B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 900EEB271B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m */; };
@@ -61,8 +60,6 @@
 		900EEB1D1B9E7C5D00AD6C58 /* UIColor+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DDTools.m"; sourceTree = "<group>"; };
 		900EEB1E1B9E7C5D00AD6C58 /* UIDevice+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DDTools.h"; sourceTree = "<group>"; };
 		900EEB1F1B9E7C5D00AD6C58 /* UIDevice+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DDTools.m"; sourceTree = "<group>"; };
-		900EEB201B9E7C5D00AD6C58 /* UIFont+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DDTools.h"; sourceTree = "<group>"; };
-		900EEB211B9E7C5D00AD6C58 /* UIFont+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DDTools.m"; sourceTree = "<group>"; };
 		900EEB221B9E7C5D00AD6C58 /* UIImage+DDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DDTools.h"; sourceTree = "<group>"; };
 		900EEB231B9E7C5D00AD6C58 /* UIImage+DDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DDTools.m"; sourceTree = "<group>"; };
 		900EEB241B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
@@ -142,8 +139,6 @@
 				900EEB1D1B9E7C5D00AD6C58 /* UIColor+DDTools.m */,
 				900EEB1E1B9E7C5D00AD6C58 /* UIDevice+DDTools.h */,
 				900EEB1F1B9E7C5D00AD6C58 /* UIDevice+DDTools.m */,
-				900EEB201B9E7C5D00AD6C58 /* UIFont+DDTools.h */,
-				900EEB211B9E7C5D00AD6C58 /* UIFont+DDTools.m */,
 				900EEB221B9E7C5D00AD6C58 /* UIImage+DDTools.h */,
 				900EEB231B9E7C5D00AD6C58 /* UIImage+DDTools.m */,
 				900EEB241B9E7C5D00AD6C58 /* UIImageView+DDHitEdgeInsets.h */,
@@ -279,7 +274,7 @@
 		90EA2BCB1B9072C6002C57E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = LeeLingang;
 				TargetAttributes = {
 					90EA2BD21B9072C6002C57E0 = {
@@ -375,7 +370,6 @@
 				900EEB2F1B9E7C5D00AD6C58 /* UIColor+DDTools.m in Sources */,
 				90EA2BDF1B9072C6002C57E0 /* ViewController.m in Sources */,
 				900EEB301B9E7C5D00AD6C58 /* UIDevice+DDTools.m in Sources */,
-				900EEB311B9E7C5D00AD6C58 /* UIFont+DDTools.m in Sources */,
 				900EEB2D1B9E7C5D00AD6C58 /* NSString+DDTools.m in Sources */,
 				900EEB2C1B9E7C5D00AD6C58 /* NSObject+DDTools.m in Sources */,
 				900EEB341B9E7C5D00AD6C58 /* UILabel+DDHitEdgeInsets.m in Sources */,
@@ -447,6 +441,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -462,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -500,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,8 +509,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DDCategoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -525,8 +523,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DDCategoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -544,6 +545,7 @@
 				);
 				INFOPLIST_FILE = DDCategoryDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDCategoryDemo.app/DDCategoryDemo";
 			};
@@ -559,6 +561,7 @@
 				);
 				INFOPLIST_FILE = DDCategoryDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HM.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DDCategoryDemo.app/DDCategoryDemo";
 			};

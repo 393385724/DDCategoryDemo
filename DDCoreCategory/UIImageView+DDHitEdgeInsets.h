@@ -10,6 +10,9 @@
 
 @interface UIImageView (DDHitEdgeInsets)
 
+/**
+ *  @brief 设置ImageView的可点击区域
+ */
 @property(nonatomic, assign) UIEdgeInsets ddHitTestEdgeInsets;
 
 @end

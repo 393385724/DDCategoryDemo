@@ -65,10 +65,12 @@
 
 - (id)ddObjectForSafeKey:(id)aKey{
     if (!aKey) {
+        NSLog(@"ERROR NSDictionary objectForKey:%@ key值不合法",aKey);
         return nil;
     }
     id object = [self objectForKey:aKey];
     if ([object isKindOfClass:[NSNull class]]) {
+        NSLog(@"WARNNING NSDictionary objectForKey:%@ object为nil",aKey);
         return nil;
     }
     return object;
@@ -89,6 +91,8 @@
 - (void)ddSetSafeObject:(id)anObject forKey:(id <NSCopying>)aKey {
     if (aKey && anObject) {
         [self setObject:anObject forKey:aKey];
+    } else{
+        NSLog(@"ERROR NSDictionary setObject:%@ forKey:%@ 不合法",anObject,aKey);
     }
 }
 

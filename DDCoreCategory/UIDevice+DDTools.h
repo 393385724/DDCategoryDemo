@@ -21,6 +21,10 @@
 + (BOOL)ddBelow8;
 + (BOOL)ddBelow9;
 
++ (BOOL)ddSystemVersionLessThanVersion:(NSString *)version;
++ (BOOL)ddSystemVersionEqualToVersion:(NSString *)version;
++ (BOOL)ddSystemVersionGreaterThanVersion:(NSString *)version;
+
 @end
 
 @interface UIDevice (DDScreen)

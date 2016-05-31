@@ -10,7 +10,6 @@
 #define DDCategoryDemo_DDCategoryHeader_h
 
 #import "NSObject+DDTools.h"
-#import "UIFont+DDTools.h"
 #import "UIImage+DDTools.h"
 #import "UIColor+DDTools.h"
 #import "UIDevice+DDTools.h"

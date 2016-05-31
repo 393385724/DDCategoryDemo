@@ -21,12 +21,14 @@
 - (NSString *)ddTrimSpecialCode{
     NSString *string = [self stringByReplacingOccurrencesOfString:@"\r" withString:@""];
     string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     string = [string stringByReplacingOccurrencesOfString:@"\t" withString:@""];
     return string;
 }
 
 - (BOOL)ddIsEmpty{
+    if (![self isKindOfClass:[NSString class]]) {
+        return YES;
+    }
     if ([[self ddTrimEndsSpace] length]) {
         return NO;
     }
@@ -49,7 +51,23 @@
     if (error) {
         NSLog(@"string to dictionary error:%@",error);
     }
+    if (![dict isKindOfClass:[NSDictionary class]]) {
+        return nil;
+    }
     return dict;
+}
+
+- (NSArray *)ddStringToArray{
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+    if (error) {
+        NSLog(@"string to array error:%@",error);
+    }
+    if (![array isKindOfClass:[NSArray class]]) {
+        return nil;
+    }
+    return array;
 }
 @end
 
@@ -76,14 +94,14 @@
 
 @implementation NSString (DDSystem)
 
-+ (NSString *)ddAppVersion{
-    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    return version;
-}
-
 + (NSString *)ddBundleIdentifier{
     NSString *bundleIdentifier = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
     return bundleIdentifier;
+}
+
++ (NSString *)ddAppVersion{
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    return version;
 }
 
 + (NSString *)ddBuildVersion{

@@ -35,10 +35,9 @@ NSString *const DDSSKeychainUniquenessIdentifierAccount = @"DDSSKeychainUniquene
 
 + (NSString *)ddDeviceType{
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return [NSString stringWithFormat:@"%@_%@",@"ios",@"phone"];
-    }
-    else {
-        return [NSString stringWithFormat:@"%@_%@",@"ios",@"pad"];
+        return @"ios_phone";
+    }else {
+        return @"ios_pad";
     }
 }
 
@@ -46,15 +45,10 @@ NSString *const DDSSKeychainUniquenessIdentifierAccount = @"DDSSKeychainUniquene
     BOOL jailbroken = NO;
     NSString *cydiaPath = @"/Applications/Cydia.app";
     NSString *aptPath = @"/private/var/lib/apt/";
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:cydiaPath]) {
+    if ([[NSFileManager defaultManager] fileExistsAtPath:cydiaPath] ||
+        [[NSFileManager defaultManager] fileExistsAtPath:aptPath]) {
         jailbroken = YES;
     }
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:aptPath]) {
-        jailbroken = YES;
-    }
-    
     return jailbroken;
 }
 
@@ -84,9 +78,6 @@ NSString *const DDSSKeychainUniquenessIdentifierAccount = @"DDSSKeychainUniquene
     return [self ddSystemVersionLessThanVersion:@"9.0"];
 }
 
-
-#pragma mark - Private Methods
-
 + (BOOL)ddSystemVersionLessThanVersion:(NSString *)version{
     return [[self ddSystemVersion] compare:version options:NSNumericSearch] == NSOrderedAscending;
 }
@@ -98,8 +89,6 @@ NSString *const DDSSKeychainUniquenessIdentifierAccount = @"DDSSKeychainUniquene
 + (BOOL)ddSystemVersionGreaterThanVersion:(NSString *)version{
     return [[self ddSystemVersion] compare:version options:NSNumericSearch] == NSOrderedDescending;
 }
-
-
 
 @end
 
