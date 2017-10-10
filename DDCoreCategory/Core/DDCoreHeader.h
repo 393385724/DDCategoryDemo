@@ -18,6 +18,7 @@
 #import "UIDevice+DDCore.h"
 #import "UIImage+DDCore.h"
 #import "UINavigationController+DDCore.h"
+#import "UINavigationBar+DDCore.h"
 
 #endif
 

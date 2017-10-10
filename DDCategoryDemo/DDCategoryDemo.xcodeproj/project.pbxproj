@@ -29,6 +29,7 @@
 		9028AE241F8C5DEB005C26D1 /* UINavigationController+DDCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9028AE231F8C5DEB005C26D1 /* UINavigationController+DDCore.m */; };
 		9028AE2B1F8C6336005C26D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9028AE291F8C6336005C26D1 /* ViewController.m */; };
 		9028AE2C1F8C6336005C26D1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9028AE2A1F8C6336005C26D1 /* ViewController.xib */; };
+		903AA6F01F8CD42400BDA542 /* UINavigationBar+DDCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 903AA6EF1F8CD42400BDA542 /* UINavigationBar+DDCore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		9028AE281F8C6336005C26D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9028AE291F8C6336005C26D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9028AE2A1F8C6336005C26D1 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		903AA6EE1F8CD42400BDA542 /* UINavigationBar+DDCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+DDCore.h"; sourceTree = "<group>"; };
+		903AA6EF1F8CD42400BDA542 /* UINavigationBar+DDCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+DDCore.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +187,8 @@
 				9028AE201F8C5D87005C26D1 /* UIImage+DDCore.m */,
 				9028AE221F8C5DEB005C26D1 /* UINavigationController+DDCore.h */,
 				9028AE231F8C5DEB005C26D1 /* UINavigationController+DDCore.m */,
+				903AA6EE1F8CD42400BDA542 /* UINavigationBar+DDCore.h */,
+				903AA6EF1F8CD42400BDA542 /* UINavigationBar+DDCore.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			files = (
 				9028AE2B1F8C6336005C26D1 /* ViewController.m in Sources */,
 				9028AE071F8C57B2005C26D1 /* UIImageView+DDHitEdgeInsets.m in Sources */,
+				903AA6F01F8CD42400BDA542 /* UINavigationBar+DDCore.m in Sources */,
 				9028AE081F8C57B2005C26D1 /* UILabel+DDHitEdgeInsets.m in Sources */,
 				9028AE0A1F8C57B2005C26D1 /* UIButton+DDHitEdgeInsets.m in Sources */,
 				9028AE211F8C5D87005C26D1 /* UIImage+DDCore.m in Sources */,
