@@ -40,6 +40,13 @@
 + (NSString *)dd_bundleIdentifier;
 
 /**
+ 返回当前app显示的名字
+
+ @return NSString
+ */
++ (NSString *)dd_appDisplayName;
+
+/**
  *  @brief 返回app的版本CFBundleShortVersionString
  *
  *  @return NSString

@@ -32,6 +32,11 @@
     return bundleIdentifier;
 }
 
++ (NSString *)dd_appDisplayName {
+    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    return appName;
+}
+
 + (NSString *)dd_appVersion{
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     return version;
