@@ -10,9 +10,4 @@
 
 @interface UIButton (DDHitEdgeInsets)
 
-/**
- *  @brief 设置Button的可点击区域
- */
-@property(nonatomic, assign) UIEdgeInsets ddHitTestEdgeInsets;
-
 @end
