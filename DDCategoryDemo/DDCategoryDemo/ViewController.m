@@ -33,9 +33,14 @@
     [self.imageView dd_addTarget:self tapAction:@selector(imageViewTap:)];
     [self.label dd_addTarget:self tapAction:@selector(labelTap:)];
     
-    NSMutableArray *array = [@[@"1"] mutableCopy];
-    [array insertObject:@"2" atIndex:1];
-    array[4] = @"3";
+    NSArray *array = @[@"1",@"2"];
+    array[3];
+    [array objectAtIndex:4];
+    
+    NSMutableArray *mArray = [@[@"1"] mutableCopy];
+    [mArray insertObject:@"2" atIndex:1];
+    mArray[4] = @"3";
+    mArray[10];
     
     NSMutableDictionary *mDict = [[NSMutableDictionary alloc] initWithCapacity:0];
     mDict[@"aa"] = nil;
@@ -43,6 +48,7 @@
     mDict[key] = @"234";
     
     NSDictionary *dict = @{@"aaa":@"11212"};
+    [dict objectForKey:key];
     NSLog(@"%@",dict[key]);
 }
 

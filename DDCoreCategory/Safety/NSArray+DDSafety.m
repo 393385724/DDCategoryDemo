@@ -13,7 +13,6 @@
 @implementation NSArray (DDSafety)
 
 + (void)load {
-    [super load];
     Class class = objc_getClass("__NSArrayI");
     [self dd_exchangeWithClass:class fromSelector:@selector(objectAtIndex:) toSelector:@selector(dd_objectAtIndex:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(objectAtIndexedSubscript:) toSelector:@selector(dd_objectAtIndexedSubscript:)];

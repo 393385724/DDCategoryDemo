@@ -13,13 +13,30 @@
 @implementation NSMutableArray (DDSafety)
 
 + (void)load {
-    [super load];
     Class class = objc_getClass("__NSArrayM");
+    [self dd_exchangeWithClass:class fromSelector:@selector(objectAtIndex:) toSelector:@selector(dd_objectAtIndex:)];
+    [self dd_exchangeWithClass:class fromSelector:@selector(objectAtIndexedSubscript:) toSelector:@selector(dd_objectAtIndexedSubscript:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(addObject:) toSelector:@selector(dd_addObject:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(insertObject:atIndex:) toSelector:@selector(dd_insertObject:atIndex:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(removeObjectAtIndex:) toSelector:@selector(dd_removeObjectAtIndex:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(replaceObjectAtIndex:withObject:) toSelector:@selector(dd_replaceObjectAtIndex:withObject:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(setObject:atIndexedSubscript:) toSelector:@selector(dd_setObject:atIndexedSubscript:)];
+}
+
+- (id)dd_objectAtIndex:(NSUInteger)index {
+    if (index >= [self count]) {
+        NSLog(@"Error [NSMutableArray objectAtIndex]: index %lu beyond bounds:[0 ... %lu]",(unsigned long)index,(unsigned long)self.count - 1);
+        return nil;
+    }
+    return [self dd_objectAtIndex:index];
+}
+
+- (id)dd_objectAtIndexedSubscript:(NSUInteger)idx {
+    if (idx >= [self count]) {
+        NSLog(@"Error [NSMutableArray objectAtIndexedSubscript]: index %lu beyond bounds:[0 ... %lu]",(unsigned long)idx,(unsigned long)self.count - 1);
+        return nil;
+    }
+    return [self dd_objectAtIndexedSubscript:idx];
 }
 
 - (void)dd_addObject:(id)anObject {

@@ -13,11 +13,28 @@
 @implementation NSMutableDictionary (DDSafety)
 
 + (void)load {
-    [super load];
     Class class = objc_getClass("__NSDictionaryM");
+    [self dd_exchangeWithClass:class fromSelector:@selector(objectForKey:) toSelector:@selector(dd_objectForKey:)];
+    [self dd_exchangeWithClass:class fromSelector:@selector(objectForKeyedSubscript:) toSelector:@selector(dd_objectForKeyedSubscript:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(removeObjectForKey:) toSelector:@selector(dd_removeObjectForKey:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(setObject:forKey:) toSelector:@selector(dd_setObject:forKey:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(setObject:forKeyedSubscript:) toSelector:@selector(dd_setObject:forKeyedSubscript:)];
+}
+
+- (id)dd_objectForKey:(NSString *)aKey {
+    if (!aKey || [aKey isKindOfClass:[NSNull class]]) {
+        NSLog(@"Error [NSMutableDictionary objectForKey]: key is nil");
+        return nil;
+    }
+    return [self dd_objectForKey:aKey];
+}
+
+- (id)dd_objectForKeyedSubscript:(NSString *)key {
+    if (!key || [key isKindOfClass:[NSNull class]]) {
+        NSLog(@"Error [NSMutableDictionary objectForKeyedSubscript]: key is nil");
+        return nil;
+    }
+    return [self dd_objectForKeyedSubscript:key];
 }
 
 - (void)dd_removeObjectForKey:(NSString *)aKey {

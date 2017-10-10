@@ -13,7 +13,6 @@
 @implementation NSDictionary (DDSafety)
 
 + (void)load {
-    [super load];
     Class class = objc_getClass("__NSDictionaryI");
     [self dd_exchangeWithClass:class fromSelector:@selector(objectForKey:) toSelector:@selector(dd_objectForKey:)];
     [self dd_exchangeWithClass:class fromSelector:@selector(objectForKeyedSubscript:) toSelector:@selector(dd_objectForKeyedSubscript:)];
