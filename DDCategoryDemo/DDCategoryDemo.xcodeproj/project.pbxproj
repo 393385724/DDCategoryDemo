@@ -30,6 +30,10 @@
 		9028AE2B1F8C6336005C26D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9028AE291F8C6336005C26D1 /* ViewController.m */; };
 		9028AE2C1F8C6336005C26D1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9028AE2A1F8C6336005C26D1 /* ViewController.xib */; };
 		903AA6F01F8CD42400BDA542 /* UINavigationBar+DDCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 903AA6EF1F8CD42400BDA542 /* UINavigationBar+DDCore.m */; };
+		904CFA0C1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA0B1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m */; };
+		904CFA0F1F8DA42A00E5DCC8 /* AppDelegate+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA0E1F8DA42A00E5DCC8 /* AppDelegate+DDRotate.m */; };
+		904CFA121F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA111F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m */; };
+		904CFA161F8DA97100E5DCC8 /* UITabBarController+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA151F8DA97100E5DCC8 /* UITabBarController+DDRotate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +83,15 @@
 		9028AE2A1F8C6336005C26D1 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		903AA6EE1F8CD42400BDA542 /* UINavigationBar+DDCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+DDCore.h"; sourceTree = "<group>"; };
 		903AA6EF1F8CD42400BDA542 /* UINavigationBar+DDCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+DDCore.m"; sourceTree = "<group>"; };
+		904CFA0A1F8DA41500E5DCC8 /* UINavigationController+DDRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+DDRotate.h"; sourceTree = "<group>"; };
+		904CFA0B1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+DDRotate.m"; sourceTree = "<group>"; };
+		904CFA0D1F8DA42A00E5DCC8 /* AppDelegate+DDRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+DDRotate.h"; sourceTree = "<group>"; };
+		904CFA0E1F8DA42A00E5DCC8 /* AppDelegate+DDRotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+DDRotate.m"; sourceTree = "<group>"; };
+		904CFA101F8DA4AB00E5DCC8 /* UIViewController+DDRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DDRotate.h"; sourceTree = "<group>"; };
+		904CFA111F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DDRotate.m"; sourceTree = "<group>"; };
+		904CFA131F8DA80900E5DCC8 /* DDRotateHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDRotateHeader.h; sourceTree = "<group>"; };
+		904CFA141F8DA97100E5DCC8 /* UITabBarController+DDRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+DDRotate.h"; sourceTree = "<group>"; };
+		904CFA151F8DA97100E5DCC8 /* UITabBarController+DDRotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+DDRotate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +142,7 @@
 		900471881F8B855B00BF5052 /* DDCoreCategory */ = {
 			isa = PBXGroup;
 			children = (
+				904CFA091F8DA3FD00E5DCC8 /* Rotate */,
 				9028AE041F8C57B2005C26D1 /* Core */,
 				9028ADF21F8C57B2005C26D1 /* HitEdgeInsets */,
 				9028ADFB1F8C57B2005C26D1 /* Safety */,
@@ -191,6 +205,22 @@
 				903AA6EF1F8CD42400BDA542 /* UINavigationBar+DDCore.m */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		904CFA091F8DA3FD00E5DCC8 /* Rotate */ = {
+			isa = PBXGroup;
+			children = (
+				904CFA131F8DA80900E5DCC8 /* DDRotateHeader.h */,
+				904CFA0A1F8DA41500E5DCC8 /* UINavigationController+DDRotate.h */,
+				904CFA0B1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m */,
+				904CFA0D1F8DA42A00E5DCC8 /* AppDelegate+DDRotate.h */,
+				904CFA0E1F8DA42A00E5DCC8 /* AppDelegate+DDRotate.m */,
+				904CFA101F8DA4AB00E5DCC8 /* UIViewController+DDRotate.h */,
+				904CFA111F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m */,
+				904CFA141F8DA97100E5DCC8 /* UITabBarController+DDRotate.h */,
+				904CFA151F8DA97100E5DCC8 /* UITabBarController+DDRotate.m */,
+			);
+			path = Rotate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +307,10 @@
 				9028AE151F8C5887005C26D1 /* NSObject+DDCore.m in Sources */,
 				9028AE0C1F8C57B2005C26D1 /* NSDictionary+DDSafety.m in Sources */,
 				9028AE1B1F8C5B17005C26D1 /* NSString+DDCore.m in Sources */,
+				904CFA161F8DA97100E5DCC8 /* UITabBarController+DDRotate.m in Sources */,
+				904CFA0C1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m in Sources */,
+				904CFA121F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m in Sources */,
+				904CFA0F1F8DA42A00E5DCC8 /* AppDelegate+DDRotate.m in Sources */,
 				9028AE0B1F8C57B2005C26D1 /* NSArray+DDSafety.m in Sources */,
 				9028AE091F8C57B2005C26D1 /* UIView+DDHitEdgeInsets.m in Sources */,
 				9028AE1E1F8C5D79005C26D1 /* UIDevice+DDCore.m in Sources */,

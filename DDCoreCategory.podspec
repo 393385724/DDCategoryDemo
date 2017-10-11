@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "DDCoreCategory"  
-  s.version          = "1.1.0"  
+  s.version          = "1.2.0"  
   s.summary          = "A categorys used on iOS."  
   s.homepage         = "https://github.com/393385724/DDCategoryDemo"  
   s.license          = 'MIT'  
@@ -25,4 +25,10 @@ Pod::Spec.new do |s|
     safe.source_files = 'DDCoreCategory/Safety/*.{h,m}'
     safe.dependency 'DDCoreCategory/Core'
   end
+  
+  s.subspec 'Rotate' do |rotate|
+    rotate.source_files = 'DDCoreCategory/Rotate/*.{h,m}'
+    rotate.dependency 'DDCoreCategory/Core'
+  end
+  
 end  
