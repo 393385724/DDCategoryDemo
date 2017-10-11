@@ -7,15 +7,14 @@
 //
 
 #import "NSDictionary+DDSafety.h"
-#import <objc/runtime.h>
-#import "NSObject+DDCore.h"
+#import "DDRuntime.h"
 
 @implementation NSDictionary (DDSafety)
 
 + (void)load {
     Class class = objc_getClass("__NSDictionaryI");
-    [self dd_exchangeWithClass:class fromSelector:@selector(objectForKey:) toSelector:@selector(dd_objectForKey:)];
-    [self dd_exchangeWithClass:class fromSelector:@selector(objectForKeyedSubscript:) toSelector:@selector(dd_objectForKeyedSubscript:)];
+    DDSwizzleMethod(class, @selector(objectForKey:), @selector(dd_objectForKey:));
+    DDSwizzleMethod(class, @selector(objectForKeyedSubscript:), @selector(dd_objectForKeyedSubscript:));
 }
 
 - (id)dd_objectForKey:(NSString *)aKey {

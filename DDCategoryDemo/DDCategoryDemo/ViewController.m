@@ -10,10 +10,6 @@
 #import "DDHitEdgeInsetsHeader.h"
 #import "DDCoreHeader.h"
 
-#import "DDSafetyHeader.h"
-
-#import <objc/runtime.h>
-
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIButton *button;

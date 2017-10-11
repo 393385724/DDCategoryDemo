@@ -7,16 +7,15 @@
 //
 
 #import "UIViewController+DDRotate.h"
-#import <objc/runtime.h>
-#import "NSObject+DDCore.h"
+#import "DDRuntime.h"
 
 static const void *DDUIViewControllerLastPageInterfaceOrientationKey = &DDUIViewControllerLastPageInterfaceOrientationKey;
 
 @implementation UIViewController (DDRotate)
 
 + (void)load {
-    [self dd_exchangeWithClass:[self class] fromSelector:@selector(viewWillAppear:) toSelector:@selector(ddRotate_viewWillAppear:)];
-    [self dd_exchangeWithClass:[self class] fromSelector:@selector(viewWillDisappear:) toSelector:@selector(ddRotate_viewWillDisappear:)];
+    DDSwizzleMethod([self class], @selector(viewWillAppear:), @selector(ddRotate_viewWillAppear:));
+    DDSwizzleMethod([self class], @selector(viewWillDisappear:), @selector(ddRotate_viewWillDisappear:));
 }
 
 - (void)ddRotate_viewWillAppear:(BOOL)animated {

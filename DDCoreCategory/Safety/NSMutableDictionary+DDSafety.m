@@ -7,45 +7,44 @@
 //
 
 #import "NSMutableDictionary+DDSafety.h"
-#import <objc/runtime.h>
-#import "NSObject+DDCore.h"
+#import "DDRuntime.h"
 
 @implementation NSMutableDictionary (DDSafety)
 
 + (void)load {
     Class class = objc_getClass("__NSDictionaryM");
-    [self dd_exchangeWithClass:class fromSelector:@selector(objectForKey:) toSelector:@selector(dd_objectForKey:)];
-    [self dd_exchangeWithClass:class fromSelector:@selector(objectForKeyedSubscript:) toSelector:@selector(dd_objectForKeyedSubscript:)];
-    [self dd_exchangeWithClass:class fromSelector:@selector(removeObjectForKey:) toSelector:@selector(dd_removeObjectForKey:)];
-    [self dd_exchangeWithClass:class fromSelector:@selector(setObject:forKey:) toSelector:@selector(dd_setObject:forKey:)];
-    [self dd_exchangeWithClass:class fromSelector:@selector(setObject:forKeyedSubscript:) toSelector:@selector(dd_setObject:forKeyedSubscript:)];
+    DDSwizzleMethod(class, @selector(objectForKey:), @selector(ddSafety_objectForKey:));
+    DDSwizzleMethod(class, @selector(objectForKeyedSubscript:), @selector(ddSafety_objectForKeyedSubscript:));
+    DDSwizzleMethod(class, @selector(removeObjectForKey:), @selector(ddSafety_removeObjectForKey:));
+    DDSwizzleMethod(class, @selector(setObject:forKey:), @selector(ddSafety_setObject:forKey:));
+    DDSwizzleMethod(class, @selector(setObject:forKeyedSubscript:), @selector(ddSafety_setObject:forKeyedSubscript:));
 }
 
-- (id)dd_objectForKey:(NSString *)aKey {
+- (id)ddSafety_objectForKey:(NSString *)aKey {
     if (!aKey || [aKey isKindOfClass:[NSNull class]]) {
         NSLog(@"Error [NSMutableDictionary objectForKey]: key is nil");
         return nil;
     }
-    return [self dd_objectForKey:aKey];
+    return [self ddSafety_objectForKey:aKey];
 }
 
-- (id)dd_objectForKeyedSubscript:(NSString *)key {
+- (id)ddSafety_objectForKeyedSubscript:(NSString *)key {
     if (!key || [key isKindOfClass:[NSNull class]]) {
         NSLog(@"Error [NSMutableDictionary objectForKeyedSubscript]: key is nil");
         return nil;
     }
-    return [self dd_objectForKeyedSubscript:key];
+    return [self ddSafety_objectForKeyedSubscript:key];
 }
 
-- (void)dd_removeObjectForKey:(NSString *)aKey {
+- (void)ddSafety_removeObjectForKey:(NSString *)aKey {
     if (!aKey || [aKey isKindOfClass:[NSNull class]]) {
         NSLog(@"Error [NSMutableDictionary removeObjectForKey]: aKey is nil");
         return;
     }
-    [self dd_removeObjectForKey:aKey];
+    [self ddSafety_removeObjectForKey:aKey];
 }
 
-- (void)dd_setObject:(id)anObject forKey:(NSString <NSCopying> *)aKey {
+- (void)ddSafety_setObject:(id)anObject forKey:(NSString <NSCopying> *)aKey {
     if (!aKey || [aKey isKindOfClass:[NSNull class]]) {
         NSLog(@"Error [NSMutableDictionary setObject:forKey]: aKey is nil");
         return;
@@ -54,10 +53,10 @@
         NSLog(@"Error [NSMutableDictionary setObject:forKey]: anObject is nil");
         return;
     }
-    [self dd_setObject:anObject forKey:aKey];
+    [self ddSafety_setObject:anObject forKey:aKey];
 }
 
-- (void)dd_setObject:(id)obj forKeyedSubscript:(NSString *)key {
+- (void)ddSafety_setObject:(id)obj forKeyedSubscript:(NSString *)key {
     if (!key || [key isKindOfClass:[NSNull class]]) {
         NSLog(@"Error [NSMutableDictionary setObject:forKeyedSubscript]: key is nil");
         return;
@@ -66,7 +65,7 @@
         NSLog(@"Error [NSMutableDictionary setObject:forKeyedSubscript]: obj is nil");
         return;
     }
-    [self dd_setObject:obj forKeyedSubscript:key];
+    [self ddSafety_setObject:obj forKeyedSubscript:key];
 }
 
 @end

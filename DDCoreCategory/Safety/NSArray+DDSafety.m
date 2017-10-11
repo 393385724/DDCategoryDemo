@@ -7,31 +7,30 @@
 //
 
 #import "NSArray+DDSafety.h"
-#import <objc/runtime.h>
-#import "NSObject+DDCore.h"
+#import "DDRuntime.h"
 
 @implementation NSArray (DDSafety)
 
 + (void)load {
     Class class = objc_getClass("__NSArrayI");
-    [self dd_exchangeWithClass:class fromSelector:@selector(objectAtIndex:) toSelector:@selector(dd_objectAtIndex:)];
-    [self dd_exchangeWithClass:class fromSelector:@selector(objectAtIndexedSubscript:) toSelector:@selector(dd_objectAtIndexedSubscript:)];
+    DDSwizzleMethod(class, @selector(objectAtIndex:), @selector(ddSafety_objectAtIndex:));
+    DDSwizzleMethod(class, @selector(objectAtIndexedSubscript:), @selector(ddSafety_objectAtIndexedSubscript:));
 }
 
-- (id)dd_objectAtIndex:(NSUInteger)index {
+- (id)ddSafety_objectAtIndex:(NSUInteger)index {
     if (index >= [self count]) {
         NSLog(@"Error [NSArray objectAtIndex]: index %lu beyond bounds:[0 ... %lu]",(unsigned long)index,(unsigned long)self.count - 1);
         return nil;
     }
-    return [self dd_objectAtIndex:index];
+    return [self ddSafety_objectAtIndex:index];
 }
 
-- (id)dd_objectAtIndexedSubscript:(NSUInteger)idx {
+- (id)ddSafety_objectAtIndexedSubscript:(NSUInteger)idx {
     if (idx >= [self count]) {
         NSLog(@"Error [NSArray objectAtIndexedSubscript]: index %lu beyond bounds:[0 ... %lu]",(unsigned long)idx,(unsigned long)self.count - 1);
         return nil;
     }
-    return [self dd_objectAtIndexedSubscript:idx];
+    return [self ddSafety_objectAtIndexedSubscript:idx];
 }
 
 @end

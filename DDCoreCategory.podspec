@@ -11,24 +11,29 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'  
   s.requires_arc = true  
   
+  s.subspec 'Runtime' do |runtime|
+    runtime.source_files  = 'DDCoreCategory/Runtime/*.{h,m}'
+    runtime.frameworks    = 'Foundation', 'UIKit'
+  end
+  
   s.subspec 'Core' do |core|
     core.source_files  = 'DDCoreCategory/Core/*.{h,m}'
     core.frameworks    = 'Foundation', 'UIKit'
+    core.dependency 'DDCoreCategory/Runtime'
   end
   
   s.subspec 'HitEdgeInsets' do |hit|
     hit.source_files = 'DDCoreCategory/HitEdgeInsets/*.{h,m}'
-    hit.dependency 'DDCoreCategory/Core'
   end
   
   s.subspec 'Safety' do |safe|
     safe.source_files = 'DDCoreCategory/Safety/*.{h,m}'
-    safe.dependency 'DDCoreCategory/Core'
+    safe.dependency 'DDCoreCategory/Runtime'
   end
   
   s.subspec 'Rotate' do |rotate|
     rotate.source_files = 'DDCoreCategory/Rotate/*.{h,m}'
-    rotate.dependency 'DDCoreCategory/Core'
+    rotate.dependency 'DDCoreCategory/Runtime'
   end
   
 end  

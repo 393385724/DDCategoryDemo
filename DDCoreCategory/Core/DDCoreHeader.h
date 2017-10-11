@@ -11,7 +11,6 @@
 
 #ifdef __OBJC__
 
-#import "NSObject+DDCore.h"
 #import "UIColor+DDCore.h"
 #import "UIView+DDCore.h"
 #import "NSString+DDCore.h"

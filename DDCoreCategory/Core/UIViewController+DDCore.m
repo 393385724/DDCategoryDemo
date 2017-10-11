@@ -7,8 +7,7 @@
 //
 
 #import "UIViewController+DDCore.h"
-#import <objc/runtime.h>
-#import "NSObject+DDCore.h"
+#import "DDRuntime.h"
 
 static const void *DDUIViewControllerViewDidAppearKey = &DDUIViewControllerViewDidAppearKey;
 
@@ -16,7 +15,7 @@ static const void *DDUIViewControllerViewDidAppearKey = &DDUIViewControllerViewD
 @implementation UIViewController (DDCore)
 
 + (void)load {
-    [self dd_exchangeWithClass:[self class] fromSelector:@selector(viewDidAppear:) toSelector:@selector(ddCore_viewDidAppear:)];
+    DDSwizzleMethod([self class], @selector(viewDidAppear:), @selector(ddCore_viewDidAppear:));
 }
 
 - (void)ddCore_viewDidAppear:(BOOL)animated {
