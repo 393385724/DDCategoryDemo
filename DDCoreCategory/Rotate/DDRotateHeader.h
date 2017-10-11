@@ -10,9 +10,16 @@
 #ifndef DDRotateHeader_h
 #define DDRotateHeader_h
 
+/**
+ 在自己的appdelegate中实现如下方法
+ 
+ - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+ return [self.window.rootViewController supportedInterfaceOrientations];
+ }
+ */
+
 #ifdef __OBJC__
 
-#import "AppDelegate+DDRotate.h"
 #import "UINavigationController+DDRotate.h"
 #import "UIViewController+DDRotate.h"
 #import "UITabBarController+DDRotate.h"

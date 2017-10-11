@@ -15,20 +15,20 @@ static const void *DDUIViewControllerLastPageInterfaceOrientationKey = &DDUIView
 @implementation UIViewController (DDRotate)
 
 + (void)load {
-    [self dd_exchangeWithClass:[self class] fromSelector:@selector(viewWillAppear:) toSelector:@selector(dd_viewWillAppear:)];
-    [self dd_exchangeWithClass:[self class] fromSelector:@selector(viewWillDisappear:) toSelector:@selector(dd_viewWillDisappear:)];
+    [self dd_exchangeWithClass:[self class] fromSelector:@selector(viewWillAppear:) toSelector:@selector(ddRotate_viewWillAppear:)];
+    [self dd_exchangeWithClass:[self class] fromSelector:@selector(viewWillDisappear:) toSelector:@selector(ddRotate_viewWillDisappear:)];
 }
 
-- (void)dd_viewWillAppear:(BOOL)animated {
-    [self dd_viewWillAppear:animated];
+- (void)ddRotate_viewWillAppear:(BOOL)animated {
+    [self ddRotate_viewWillAppear:animated];
     UIInterfaceOrientation currentInterfaceOrientation = [self preferredInterfaceOrientationForPresentation];
     if (currentInterfaceOrientation != UIInterfaceOrientationUnknown && currentInterfaceOrientation != self.ddLastPageInterfaceOrientation) {
         [self forceOrientationInterface:currentInterfaceOrientation];
     }
 }
 
-- (void)dd_viewWillDisappear:(BOOL)animated {
-    [self dd_viewWillDisappear:animated];
+- (void)ddRotate_viewWillDisappear:(BOOL)animated {
+    [self ddRotate_viewWillDisappear:animated];
     UIInterfaceOrientation currentInterfaceOrientation = [self preferredInterfaceOrientationForPresentation];
     if (currentInterfaceOrientation != UIInterfaceOrientationUnknown && currentInterfaceOrientation != self.ddLastPageInterfaceOrientation) {
         [self forceOrientationInterface:self.ddLastPageInterfaceOrientation];
