@@ -12,6 +12,8 @@
 		9004717C1F8B854B00BF5052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9004717B1F8B854B00BF5052 /* Assets.xcassets */; };
 		9004717F1F8B854B00BF5052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9004717D1F8B854B00BF5052 /* LaunchScreen.storyboard */; };
 		900471821F8B854B00BF5052 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 900471811F8B854B00BF5052 /* main.m */; };
+		901C90E31FA074C900FA5655 /* UIView+DDSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C90E21FA074C900FA5655 /* UIView+DDSafety.m */; };
+		901C90E61FA0793900FA5655 /* NSObject+DDSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C90E51FA0793900FA5655 /* NSObject+DDSafety.m */; };
 		9028AE071F8C57B2005C26D1 /* UIImageView+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 9028ADF31F8C57B2005C26D1 /* UIImageView+DDHitEdgeInsets.m */; };
 		9028AE081F8C57B2005C26D1 /* UILabel+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 9028ADF51F8C57B2005C26D1 /* UILabel+DDHitEdgeInsets.m */; };
 		9028AE091F8C57B2005C26D1 /* UIView+DDHitEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 9028ADF61F8C57B2005C26D1 /* UIView+DDHitEdgeInsets.m */; };
@@ -29,6 +31,7 @@
 		9028AE2B1F8C6336005C26D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9028AE291F8C6336005C26D1 /* ViewController.m */; };
 		9028AE2C1F8C6336005C26D1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9028AE2A1F8C6336005C26D1 /* ViewController.xib */; };
 		903AA6F01F8CD42400BDA542 /* UINavigationBar+DDCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 903AA6EF1F8CD42400BDA542 /* UINavigationBar+DDCore.m */; };
+		9043E50E1FA083EC0047E827 /* UIAlertController+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9043E50D1FA083EC0047E827 /* UIAlertController+DDRotate.m */; };
 		904CFA0C1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA0B1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m */; };
 		904CFA121F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA111F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m */; };
 		904CFA161F8DA97100E5DCC8 /* UITabBarController+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA151F8DA97100E5DCC8 /* UITabBarController+DDRotate.m */; };
@@ -45,6 +48,10 @@
 		9004717E1F8B854B00BF5052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		900471801F8B854B00BF5052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		900471811F8B854B00BF5052 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		901C90E11FA074C900FA5655 /* UIView+DDSafety.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DDSafety.h"; sourceTree = "<group>"; };
+		901C90E21FA074C900FA5655 /* UIView+DDSafety.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DDSafety.m"; sourceTree = "<group>"; };
+		901C90E41FA0793900FA5655 /* NSObject+DDSafety.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DDSafety.h"; sourceTree = "<group>"; };
+		901C90E51FA0793900FA5655 /* NSObject+DDSafety.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DDSafety.m"; sourceTree = "<group>"; };
 		9028ADF31F8C57B2005C26D1 /* UIImageView+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
 		9028ADF41F8C57B2005C26D1 /* UIButton+DDHitEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DDHitEdgeInsets.h"; sourceTree = "<group>"; };
 		9028ADF51F8C57B2005C26D1 /* UILabel+DDHitEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DDHitEdgeInsets.m"; sourceTree = "<group>"; };
@@ -80,6 +87,8 @@
 		9028AE2A1F8C6336005C26D1 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		903AA6EE1F8CD42400BDA542 /* UINavigationBar+DDCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+DDCore.h"; sourceTree = "<group>"; };
 		903AA6EF1F8CD42400BDA542 /* UINavigationBar+DDCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+DDCore.m"; sourceTree = "<group>"; };
+		9043E50C1FA083EC0047E827 /* UIAlertController+DDRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+DDRotate.h"; sourceTree = "<group>"; };
+		9043E50D1FA083EC0047E827 /* UIAlertController+DDRotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+DDRotate.m"; sourceTree = "<group>"; };
 		904CFA0A1F8DA41500E5DCC8 /* UINavigationController+DDRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+DDRotate.h"; sourceTree = "<group>"; };
 		904CFA0B1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+DDRotate.m"; sourceTree = "<group>"; };
 		904CFA101F8DA4AB00E5DCC8 /* UIViewController+DDRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DDRotate.h"; sourceTree = "<group>"; };
@@ -178,6 +187,10 @@
 				9028AE011F8C57B2005C26D1 /* NSMutableArray+DDSafety.m */,
 				9028AE031F8C57B2005C26D1 /* NSArray+DDSafety.h */,
 				9028ADFE1F8C57B2005C26D1 /* NSArray+DDSafety.m */,
+				901C90E11FA074C900FA5655 /* UIView+DDSafety.h */,
+				901C90E21FA074C900FA5655 /* UIView+DDSafety.m */,
+				901C90E41FA0793900FA5655 /* NSObject+DDSafety.h */,
+				901C90E51FA0793900FA5655 /* NSObject+DDSafety.m */,
 			);
 			path = Safety;
 			sourceTree = "<group>";
@@ -216,6 +229,8 @@
 				904CFA111F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m */,
 				904CFA141F8DA97100E5DCC8 /* UITabBarController+DDRotate.h */,
 				904CFA151F8DA97100E5DCC8 /* UITabBarController+DDRotate.m */,
+				9043E50C1FA083EC0047E827 /* UIAlertController+DDRotate.h */,
+				9043E50D1FA083EC0047E827 /* UIAlertController+DDRotate.m */,
 			);
 			path = Rotate;
 			sourceTree = "<group>";
@@ -305,6 +320,7 @@
 				9028AE071F8C57B2005C26D1 /* UIImageView+DDHitEdgeInsets.m in Sources */,
 				903AA6F01F8CD42400BDA542 /* UINavigationBar+DDCore.m in Sources */,
 				9028AE081F8C57B2005C26D1 /* UILabel+DDHitEdgeInsets.m in Sources */,
+				9043E50E1FA083EC0047E827 /* UIAlertController+DDRotate.m in Sources */,
 				9028AE0A1F8C57B2005C26D1 /* UIButton+DDHitEdgeInsets.m in Sources */,
 				9028AE211F8C5D87005C26D1 /* UIImage+DDCore.m in Sources */,
 				900471821F8B854B00BF5052 /* main.m in Sources */,
@@ -313,6 +329,7 @@
 				904CFA1D1F8DCFC600E5DCC8 /* DDRuntime.m in Sources */,
 				9028AE0C1F8C57B2005C26D1 /* NSDictionary+DDSafety.m in Sources */,
 				9028AE1B1F8C5B17005C26D1 /* NSString+DDCore.m in Sources */,
+				901C90E61FA0793900FA5655 /* NSObject+DDSafety.m in Sources */,
 				904CFA161F8DA97100E5DCC8 /* UITabBarController+DDRotate.m in Sources */,
 				904CFA0C1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m in Sources */,
 				904CFA121F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m in Sources */,
@@ -324,6 +341,7 @@
 				9028AE121F8C5874005C26D1 /* UIColor+DDCore.m in Sources */,
 				9028AE0E1F8C57B2005C26D1 /* NSMutableDictionary+DDSafety.m in Sources */,
 				900471741F8B854B00BF5052 /* AppDelegate.m in Sources */,
+				901C90E31FA074C900FA5655 /* UIView+DDSafety.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

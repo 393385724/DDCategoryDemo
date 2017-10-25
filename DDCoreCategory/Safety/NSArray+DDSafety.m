@@ -12,14 +12,15 @@
 @implementation NSArray (DDSafety)
 
 + (void)load {
+#ifndef DEBUG
     Class class = objc_getClass("__NSArrayI");
     DDSwizzleMethod(class, @selector(objectAtIndex:), @selector(ddSafety_objectAtIndex:));
     DDSwizzleMethod(class, @selector(objectAtIndexedSubscript:), @selector(ddSafety_objectAtIndexedSubscript:));
+#endif
 }
 
 - (id)ddSafety_objectAtIndex:(NSUInteger)index {
     if (index >= [self count]) {
-        NSLog(@"Error [NSArray objectAtIndex]: index %lu beyond bounds:[0 ... %lu]",(unsigned long)index,(unsigned long)self.count - 1);
         return nil;
     }
     return [self ddSafety_objectAtIndex:index];
@@ -27,7 +28,6 @@
 
 - (id)ddSafety_objectAtIndexedSubscript:(NSUInteger)idx {
     if (idx >= [self count]) {
-        NSLog(@"Error [NSArray objectAtIndexedSubscript]: index %lu beyond bounds:[0 ... %lu]",(unsigned long)idx,(unsigned long)self.count - 1);
         return nil;
     }
     return [self ddSafety_objectAtIndexedSubscript:idx];

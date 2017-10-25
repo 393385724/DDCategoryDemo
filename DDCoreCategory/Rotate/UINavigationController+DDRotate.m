@@ -27,8 +27,8 @@
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
-    if (self.visibleViewController) {
-        return self.visibleViewController.preferredInterfaceOrientationForPresentation;
+    if (self.presentedViewController) {
+        return self.presentedViewController.preferredInterfaceOrientationForPresentation;
     } else {
         return self.topViewController.preferredInterfaceOrientationForPresentation;
     }
