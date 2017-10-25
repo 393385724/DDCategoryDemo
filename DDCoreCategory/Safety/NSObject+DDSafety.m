@@ -24,7 +24,7 @@
                                       class_getMethodImplementation([self class], @selector(hookDoesNotRecognizeSelector:)),
                                       method_getTypeEncoding(hookMethod));
         if (didAdd) {
-            NSLog(@"[%@] doesNotRecognizeSelector: [instance %@]", NSStringFromClass(class),NSStringFromSelector(aSelector));
+            NSLog(@"[%@] doesNotRecognizeSelector:  [%@]", NSStringFromClass(class),NSStringFromSelector(aSelector));
         }
     }
     return self;
@@ -47,7 +47,10 @@
 - (id)ddSafety_forwardingTargetForSelector:(SEL)aSelector {
     id target = [self ddSafety_forwardingTargetForSelector:aSelector];
     if (target == nil) {
-        return [[DDForwardProxy alloc] initWithClass:[self class] selector:aSelector];
+        NSString *className = NSStringFromClass([self class]);
+        if (![className hasPrefix:@"_"]) {
+            return [[DDForwardProxy alloc] initWithClass:[self class] selector:aSelector];
+        }
     }
     return target;
 }
