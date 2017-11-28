@@ -13,7 +13,7 @@
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     if(UIEdgeInsetsEqualToEdgeInsets(self.ddHitEdgeInsets, UIEdgeInsetsZero) || self.hidden) {
-        return [self pointInside:point withEvent:event];
+        return [super pointInside:point withEvent:event];
     }
     CGRect relativeFrame = self.bounds;
     CGRect hitFrame = UIEdgeInsetsInsetRect(relativeFrame, self.ddHitEdgeInsets);

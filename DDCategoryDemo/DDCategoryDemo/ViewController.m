@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.label.ddHitEdgeInsets = UIEdgeInsetsMake(-50, -50, -50, -50);
+//    self.label.ddHitEdgeInsets = UIEdgeInsetsMake(-50, -50, -50, -50);
     self.button.ddHitEdgeInsets = UIEdgeInsetsMake(-50, -50, -50, -50);
     self.imageView.ddHitEdgeInsets = UIEdgeInsetsMake(-50, -50, -50, -50);
     
@@ -50,14 +50,9 @@
 
 - (void)labelTap:(UITapGestureRecognizer *)tap {
     NSLog(@"label tapd");
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        self.imageView.backgroundColor = [UIColor redColor];
-    });
 }
 
 - (void)imageViewTap:(UITapGestureRecognizer *)tap {
-    [self.imageView performSelector:@selector(setText:) withObject:@"111111"];
     NSLog(@"imageView tapd");
 }
 
