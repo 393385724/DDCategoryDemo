@@ -11,26 +11,25 @@
 @implementation UINavigationController (DDRotate)
 
 - (BOOL)shouldAutorotate{
-    if (self.presentedViewController) {
-        return self.presentedViewController.shouldAutorotate;
-    } else {
-        return self.topViewController.shouldAutorotate;
-    }
+    return [self dd_realViewController].shouldAutorotate;
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    if (self.presentedViewController) {
-        return self.presentedViewController.supportedInterfaceOrientations;
-    } else {
-        return self.topViewController.supportedInterfaceOrientations;
-    }
+    return [self dd_realViewController].supportedInterfaceOrientations;
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
-    if (self.presentedViewController) {
-        return self.presentedViewController.preferredInterfaceOrientationForPresentation;
+    return [self dd_realViewController].preferredInterfaceOrientationForPresentation;
+}
+
+#pragma mark - Private Methods
+
+- (UIViewController *)dd_realViewController {
+    if (self.presentedViewController && ![self.presentedViewController isKindOfClass:NSClassFromString(@"UISnapshotModalViewController")]) {
+        //这样处理是为了找到真正的页面，presented的时候apple会临时产生一个UISnapshotModalViewController的过渡页面
+        return self.presentedViewController;
     } else {
-        return self.topViewController.preferredInterfaceOrientationForPresentation;
+        return self.topViewController;
     }
 }
 
