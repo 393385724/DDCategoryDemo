@@ -37,6 +37,9 @@
 		904CFA161F8DA97100E5DCC8 /* UITabBarController+DDRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA151F8DA97100E5DCC8 /* UITabBarController+DDRotate.m */; };
 		904CFA191F8DAEE300E5DCC8 /* UIViewController+DDCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA181F8DAEE300E5DCC8 /* UIViewController+DDCore.m */; };
 		904CFA1D1F8DCFC600E5DCC8 /* DDRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 904CFA1C1F8DCFC600E5DCC8 /* DDRuntime.m */; };
+		90C5F4591FD12CEC00295E22 /* UIScrollView+DDGestureConflict.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C5F4581FD12CEC00295E22 /* UIScrollView+DDGestureConflict.m */; };
+		90F00C4E1FD7DD0E000C8BC5 /* NSString+DDInfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F00C4D1FD7DD0E000C8BC5 /* NSString+DDInfoPlist.m */; };
+		90F00C511FD7DD68000C8BC5 /* NSString+DDPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F00C501FD7DD68000C8BC5 /* NSString+DDPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +103,12 @@
 		904CFA181F8DAEE300E5DCC8 /* UIViewController+DDCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DDCore.m"; sourceTree = "<group>"; };
 		904CFA1B1F8DCFC600E5DCC8 /* DDRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDRuntime.h; sourceTree = "<group>"; };
 		904CFA1C1F8DCFC600E5DCC8 /* DDRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDRuntime.m; sourceTree = "<group>"; };
+		90C5F4571FD12CEC00295E22 /* UIScrollView+DDGestureConflict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DDGestureConflict.h"; sourceTree = "<group>"; };
+		90C5F4581FD12CEC00295E22 /* UIScrollView+DDGestureConflict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DDGestureConflict.m"; sourceTree = "<group>"; };
+		90F00C4C1FD7DD0E000C8BC5 /* NSString+DDInfoPlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DDInfoPlist.h"; sourceTree = "<group>"; };
+		90F00C4D1FD7DD0E000C8BC5 /* NSString+DDInfoPlist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDInfoPlist.m"; sourceTree = "<group>"; };
+		90F00C4F1FD7DD68000C8BC5 /* NSString+DDPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DDPath.h"; sourceTree = "<group>"; };
+		90F00C501FD7DD68000C8BC5 /* NSString+DDPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDPath.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,7 @@
 		900471881F8B855B00BF5052 /* DDCoreCategory */ = {
 			isa = PBXGroup;
 			children = (
+				90C5F4561FD12CC000295E22 /* GestureConflict */,
 				904CFA1A1F8DCF9D00E5DCC8 /* Runtime */,
 				904CFA091F8DA3FD00E5DCC8 /* Rotate */,
 				9028AE041F8C57B2005C26D1 /* Core */,
@@ -205,6 +215,10 @@
 				9028AE171F8C59C0005C26D1 /* UIView+DDCore.m */,
 				9028AE191F8C5B17005C26D1 /* NSString+DDCore.h */,
 				9028AE1A1F8C5B17005C26D1 /* NSString+DDCore.m */,
+				90F00C4C1FD7DD0E000C8BC5 /* NSString+DDInfoPlist.h */,
+				90F00C4D1FD7DD0E000C8BC5 /* NSString+DDInfoPlist.m */,
+				90F00C4F1FD7DD68000C8BC5 /* NSString+DDPath.h */,
+				90F00C501FD7DD68000C8BC5 /* NSString+DDPath.m */,
 				9028AE1C1F8C5D79005C26D1 /* UIDevice+DDCore.h */,
 				9028AE1D1F8C5D79005C26D1 /* UIDevice+DDCore.m */,
 				9028AE1F1F8C5D87005C26D1 /* UIImage+DDCore.h */,
@@ -242,6 +256,15 @@
 				904CFA1C1F8DCFC600E5DCC8 /* DDRuntime.m */,
 			);
 			path = Runtime;
+			sourceTree = "<group>";
+		};
+		90C5F4561FD12CC000295E22 /* GestureConflict */ = {
+			isa = PBXGroup;
+			children = (
+				90C5F4571FD12CEC00295E22 /* UIScrollView+DDGestureConflict.h */,
+				90C5F4581FD12CEC00295E22 /* UIScrollView+DDGestureConflict.m */,
+			);
+			path = GestureConflict;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F00C4E1FD7DD0E000C8BC5 /* NSString+DDInfoPlist.m in Sources */,
 				9028AE2B1F8C6336005C26D1 /* ViewController.m in Sources */,
 				9028AE071F8C57B2005C26D1 /* UIImageView+DDHitEdgeInsets.m in Sources */,
 				903AA6F01F8CD42400BDA542 /* UINavigationBar+DDCore.m in Sources */,
@@ -331,6 +355,8 @@
 				9028AE1B1F8C5B17005C26D1 /* NSString+DDCore.m in Sources */,
 				901C90E61FA0793900FA5655 /* NSObject+DDSafety.m in Sources */,
 				904CFA161F8DA97100E5DCC8 /* UITabBarController+DDRotate.m in Sources */,
+				90C5F4591FD12CEC00295E22 /* UIScrollView+DDGestureConflict.m in Sources */,
+				90F00C511FD7DD68000C8BC5 /* NSString+DDPath.m in Sources */,
 				904CFA0C1F8DA41500E5DCC8 /* UINavigationController+DDRotate.m in Sources */,
 				904CFA121F8DA4AB00E5DCC8 /* UIViewController+DDRotate.m in Sources */,
 				904CFA191F8DAEE300E5DCC8 /* UIViewController+DDCore.m in Sources */,

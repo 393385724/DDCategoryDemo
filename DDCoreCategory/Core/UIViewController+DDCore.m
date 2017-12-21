@@ -18,6 +18,17 @@ static const void *DDUIViewControllerViewDidAppearKey = &DDUIViewControllerViewD
     DDSwizzleMethod([self class], @selector(viewDidAppear:), @selector(ddCore_viewDidAppear:));
 }
 
+#pragma mark - Public
+
+- (BOOL)dd_isPushed {
+    if (self.presentingViewController) {
+        return YES;
+    }
+    return NO;
+}
+
+#pragma mark - Runtime
+
 - (void)ddCore_viewDidAppear:(BOOL)animated {
     [self ddCore_viewDidAppear:animated];
     self.ddViewDidAppear = YES;

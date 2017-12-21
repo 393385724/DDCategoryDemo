@@ -10,6 +10,16 @@
 
 @interface UIViewController (DDCore)
 
+/**
+ 页面是否已经显示，viewDidAppear执行之后为YES
+ */
 @property (readonly) BOOL ddViewDidAppear;
+
+/**
+ 判断当前页面是否被push进来
+
+ @return YES ？ 是 ：否
+ */
+- (BOOL)dd_isPushed;
 
 @end

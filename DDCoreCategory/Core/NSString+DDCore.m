@@ -10,43 +10,6 @@
 
 @implementation NSString (DDCore)
 
-+ (NSString *)dd_documentsPath{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    return docDir;
-}
-
-+ (NSString *)dd_cachesPath{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cachesDir = [paths objectAtIndex:0];
-    return cachesDir;
-}
-
-+ (NSString *)dd_tmpPath{
-    NSString *tmpDir = NSTemporaryDirectory();
-    return tmpDir;
-}
-
-+ (NSString *)dd_bundleIdentifier{
-    NSString *bundleIdentifier = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
-    return bundleIdentifier;
-}
-
-+ (NSString *)dd_appDisplayName {
-    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
-    return appName;
-}
-
-+ (NSString *)dd_appVersion{
-    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    return version;
-}
-
-+ (NSString *)dd_buildVersion{
-    NSString *bundleVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
-    return bundleVersion;
-}
-
 + (NSString *)dd_systemTimeZone{
     NSString *timeZone = [[NSTimeZone systemTimeZone] name];
     return timeZone;
