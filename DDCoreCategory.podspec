@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, '8.0'  
   s.ios.deployment_target = '8.0'  
-  s.requires_arc = true  
+  s.requires_arc = true 
+  s.deprecated = true 
   
   s.subspec 'Runtime' do |runtime|
     runtime.source_files  = 'DDCoreCategory/Runtime/*.{h,m}'
