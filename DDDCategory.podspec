@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|  
-  s.name             = "DDCategory"  
+  s.name             = "DDDCategory"  
   s.version          = "1.3.0"  
   s.summary          = "A categorys used on iOS."  
   s.homepage         = "https://github.com/393385724/DDCategoryDemo"  
@@ -20,21 +20,21 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.source_files  = 'DDCategory/Core/*.{h,m}'
     core.frameworks    = 'Foundation', 'UIKit'
-    core.dependency 'DDCategory/Runtime'
-  end
-  
-  s.subspec 'HitEdgeInsets' do |hit|
-    hit.source_files = 'DDCategory/HitEdgeInsets/*.{h,m}'
+    core.dependency 'DDDCategory/Runtime'
   end
   
   s.subspec 'Safety' do |safe|
     safe.source_files = 'DDCategory/Safety/*.{h,m}'
-    safe.dependency 'DDCategory/Runtime'
+    safe.dependency 'DDDCategory/Runtime'
   end
   
   s.subspec 'Rotate' do |rotate|
     rotate.source_files = 'DDCategory/Rotate/*.{h,m}'
-    rotate.dependency 'DDCategory/Runtime'
+    rotate.dependency 'DDDCategory/Runtime'
+  end
+  
+  s.subspec 'HitEdgeInsets' do |hit|
+    hit.source_files = 'DDCategory/HitEdgeInsets/*.{h,m}'
   end
   
   s.subspec 'GestureConflict' do |gestureConflict|
