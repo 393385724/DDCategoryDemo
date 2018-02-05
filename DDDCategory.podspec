@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "DDDCategory"  
-  s.version          = "1.3.0"  
+  s.version          = "1.3.1"  
   s.summary          = "A categorys used on iOS."  
   s.homepage         = "https://github.com/393385724/DDCategoryDemo"  
   s.license          = 'MIT'  
